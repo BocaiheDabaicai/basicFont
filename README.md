@@ -35,3 +35,10 @@
 <kbd><var>gif</var> 显示动态图，显示颜色有限</kbd>  
 <kbd><var>webp</var> 显示网页图片，支持动态图，兼容性不足</kbd>  
 <kbd><var>base64</var> 显示网页图片，图片本身以编码形式显示</kbd> 
+#### 超链接
+<blockquote>
+<p><em>属性值</em></p>  
+<p>target</p>  
+    _self: 在本标签进行跳转</p>
+    _blank: 在新标签进行跳转
+</blockquote>
