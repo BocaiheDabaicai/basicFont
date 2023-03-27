@@ -23,4 +23,15 @@
 <u>16.用于标错</u>  
 <q>17.引用</q>  
 <blockquote>18.块引用,独占一块</blockquote>  
-<address>19.地址,独占一块</address>
+<address>19.地址,独占一块</address>  
+
+#### 绝对路径补充
+本地绝对路径  
+网络绝对路径
+#### 图片格式介绍 
+<kbd><var>jpg jpeg</var> 损失细节存储，不支持动态图、透明背景</kbd>  
+<kbd><var>png</var> 无损压缩，不支持动态图</kbd>  
+<kbd><var>bmp</var> 不进行压缩，保存更多细节，不支持动态图、透明背景 == png+</kbd>  
+<kbd><var>gif</var> 显示动态图，显示颜色有限</kbd>  
+<kbd><var>webp</var> 显示网页图片，支持动态图，兼容性不足</kbd>  
+<kbd><var>base64</var> 显示网页图片，图片本身以编码形式显示</kbd> 
