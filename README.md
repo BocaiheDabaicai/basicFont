@@ -37,8 +37,23 @@
 <kbd><var>base64</var> 显示网页图片，图片本身以编码形式显示</kbd> 
 #### 超链接
 <blockquote>
-<p><em>属性值</em></p>  
+<p><em>——属性值</em></p>  
 <p>target</p>  
     _self: 在本标签进行跳转</p>
     _blank: 在新标签进行跳转
+<p>download</p>
+填写下载名或不填
+<p><em>——浏览器支持的文件</em></p>
+<code>jpg gif mp4 pdf</code><p/>
+<code>zip 不可以直接打开</code>
+<p><em>——锚点</em></p>
+<code>跳转:href="#(锚点名字)"</code><p/>
+<code>回到顶部:href="#"</code><p/>
+<code>刷新页面:href=""</code><p/>
+<code>命名_1:name="(锚点名字)"</code><p/>
+<code>命名_2:id="(锚点名字)"<strong> 推荐</strong></code><p/>
+<p><em>——唤醒应用</em></p>
+<code>打电话:href="tel:电话号码"</code><p/>
+<code>发邮件:href="mailto:邮件名"</code><p/>
+<code>发短信:href="sms:收件人"</code><p/>
 </blockquote>
