@@ -74,9 +74,14 @@
 #### 表格
 <em>内容</em>
 <ol>
-    <li><code>table</code>表格</li>
-    <li><code>caption</code>表格标题</li>
-    <li><code>thead</code>表格头部</li>
-    <li><code>tbody</code>表格主体</li>
-    <li><code>tfoot</code>表格脚注</li>
+    <li><code>table</code>表格 支持属性：border width height cellspacing</li>
+    <li><code>caption</code>表格标题 支持属性：无</li>
+    <li><code>thead</code>表格头部 支持属性：height align valign</li>
+    <li><code>tbody</code>表格主体 支持属性：height align valign</li>
+    <li><code>tfoot</code>表格脚注 支持属性：height align valign</li>
+    <li><code>td</code>表格脚注 支持属性：width height align valign rowspan colspan</li>
+    <li><code>th</code>表格脚注 支持属性：width height align valign rowspan colspan</li>
 </ol>  
+
+<em>注意</em>  
+<code>1.td、th的设置会导致整行或整列的宽高改变</code>
