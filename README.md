@@ -57,3 +57,26 @@
 <code>发邮件:href="mailto:邮件名"</code><p/>
 <code>发短信:href="sms:收件人"</code><p/>
 </blockquote>
+
+#### 列表
+<em>注意事项</em>  
+<ol>
+    <li><code>li</code>不建议单独使用</li>
+    <li>列表<code>ol、ul、li等等</code>可嵌套其他块内元素、行内元素</li>
+</ol>  
+<em>类型</em>
+<ol>
+    <li>ul li 无序列表</li>
+    <li>ol li 有序序列表</li>
+    <li>dl dt dd 自定义列表<code>dt 为列表头 dd为列表内容</code></li>
+</ol>
+
+#### 表格
+<em>内容</em>
+<ol>
+    <li><code>table</code>表格</li>
+    <li><code>caption</code>表格标题</li>
+    <li><code>thead</code>表格头部</li>
+    <li><code>tbody</code>表格主体</li>
+    <li><code>tfoot</code>表格脚注</li>
+</ol>  
