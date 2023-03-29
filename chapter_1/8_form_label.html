@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表使用</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search">
+        <fieldset>
+            <legend>主要信息</legend>
+            <!-- 关联方法，1.for属性关联，输入框要预设id 2.将输入框放入标签 -->
+            <label for="account">账号:</label><input id="account" type="text" name="account" value="jd" maxlength="10" ><br>
+            <label >密码:<input type="password" name="password" value="" maxlength="6" ></label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>次要信息</legend>
+            性别:
+            <label><input type="radio" name="gender" value="male" checked>男</label>
+            <label><input type="radio" name="gender" value="female">女</label><br>
+            爱好:
+            <label><input type="checkbox" name="hobby" value="basketball" checked>篮球</label>
+            <label><input type="checkbox" name="hobby" value="tennis">羽毛球</label>
+            <label><input type="checkbox" name="hobby" value="swimming">游泳</label><br>
+            其他:
+            <label><textarea name="other" cols="21" rows="3"></textarea></label><br>
+            <label>
+                籍贯:
+                <select name="place">
+                    <option value="shandong">山东省</option>
+                    <option value="shanghai" selected>上海市</option>
+                    <option value="guangdong">广东省</option>
+                    <option value="chongqing">重庆市</option>
+                </select>
+            </label>
+        </fieldset>
+        <br>
+        <!-- 隐藏域 ,提示的作用-->
+        <input type="hidden" name="from" value="agouti"><br>
+        <!-- 提交写法一 表单内 button 默认类型指向submit-->
+        <button type="submit">确认</button>
+        <button type="reset">重置</button>
+        <button type="button">检测账号是否被注册</button>
+        <!-- 提交写法二 -->
+        <!--<input type="submit" value="确认">-->
+        <!--<input type="reset" value="重置">-->
+    </form>
+</body>
+</html>

@@ -94,4 +94,6 @@
 <code>1.action: 填入提交地址 </code>  
 <code>2.target: 新页签的打开方式 </code>  
 <code>3.method: 控制提交方式 </code>  
+<code>4.disable: 用在 input textarea select option 上禁用标签 </code>  
+<code>5.fieldset legend: 创造信息领域，外部出现边框，legend为标题 </code>  
 <em>特别地，使用<code>input</code>输入框需要填入name属性，指定提交数据的名称</em>
