@@ -85,3 +85,13 @@
 
 <em>注意</em>  
 <code>1.td、th的设置会导致整行或整列的宽高改变</code>
+#### 常用小标签
+<code>1. br 换行</code>  
+<code>2. hr 分割,若实现修饰线，后期用css</code>  
+<code>3. pre 按原代码显示</code>
+#### 表单
+<em>form 属性</em>  
+<code>1.action: 填入提交地址 </code>  
+<code>2.target: 新页签的打开方式 </code>  
+<code>3.method: 控制提交方式 </code>  
+<em>特别地，使用<code>input</code>输入框需要填入name属性，指定提交数据的名称</em>
