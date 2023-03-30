@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>框架</title>
+</head>
+<body>
+<!--1.直接使用-->
+<!--  <iframe src="https://www.taobao.com/" width="400" height="400" frameborder="0"></iframe>-->
+<!--2.配合a标签使用-->
+<!--<a href="https://www.taobao.com/" target="ops">打开淘宝</a><br>-->
+<!--<iframe name="ops" width="400" height="400" frameborder="0"></iframe>-->
+<!--3.配合表单使用-->
+<form action="https://so.toutiao.com/search" target="container">
+    <input type="text" name="keyword">
+    <input type="submit" value="搜索">
+</form>
+<iframe name="container" width="400" height="400" frameborder="0"></iframe>
+</body>
+</html>

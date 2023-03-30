@@ -97,3 +97,30 @@
 <code>4.disable: 用在 input textarea select option 上禁用标签 </code>  
 <code>5.fieldset legend: 创造信息领域，外部出现边框，legend为标题 </code>  
 <em>特别地，使用<code>input</code>输入框需要填入name属性，指定提交数据的名称</em>
+#### iframe框架
+<em>属性</em>  
+<code>1.src 链接地址，单独展示使用</code>  
+<code>2.width 宽度</code>  
+<code>3.height 长度</code>  
+<code>4.frameborder 边框，可选值 0 1</code>  
+<code>5.name 边框名，配合target使用</code>  
+#### 字符实体
+<blockquote>
+    <p style="color: red">1.空格 &nbps;</p>
+    <p style="color: red">2.小于 &lt;</p>
+    <p style="color: red">3.大于 &gt;</p>
+    <p style="color: red">4.和 &amp;</p>
+    <p>5.引号 &quot;</p>
+    <p>6.反引号 &acute;</p>
+    <p>7.分 &cent;</p>
+    <p>8.镑 &pound;</p>
+    <p style="color: red">9.元 &yen;</p>
+    <p>10.欧元 &euro;</p>
+    <p style="color: red">11.版权 &copy;</p>
+    <p>12.注册商标 &reg;</p>
+    <p>13.商标 &trade;</p>
+    <p style="color: red">14.乘号 &times;</p>
+    <p style="color: red">15.除号 &divide;</p>
+    <em>更多的字符实体参看：</em><br>
+    <a>https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references</a>
+</blockquote>
