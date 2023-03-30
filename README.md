@@ -124,3 +124,23 @@
     <em>更多的字符实体参看：</em><br>
     <a>https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references</a>
 </blockquote>
+
+#### 全局属性
+<code>1.id 运用在body里，且非&lt;title&gt;标签上</code>  
+<code>2.class 主要使用在&lt;div&gt;标签上,接收css样式</code>  
+<code>3.style 主要使用在&lt;div&gt;标签上,编写css样式</code>  
+<code>4.dir 运用在body里，且非&lt;title&gt;标签上,使用ltr、rtl调整内容的位置</code>  
+<code>5.title 主要使用在&lt;div&gt;标签上,使用ltr、rtl调整内容的位置</code>  
+<code>6.lang 主要使用在&lt;div&gt;标签上,标注内容的语言</code>
+#### meta
+<blockquote>
+    <p>meta: robot 属性值</p>
+    <p>1.index 允许搜索爬虫索引</p>
+    <p>2.noindex 不允许搜索爬虫索引</p>
+    <p>3.follow 允许搜索爬虫索引,且跟随页面上的链接</p>
+    <p>4.nofollow 允许搜索爬虫索引,但不跟随页面上的链接</p>
+    <p>5.all 允许索引与跟随</p>
+    <p>6.none 不允许索引与跟随</p>
+    <p>7.noarchive 不缓存页面内容</p>
+    <p>8.nocache 不缓存页面内容</p>
+</blockquote>
