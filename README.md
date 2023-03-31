@@ -151,4 +151,6 @@
 <em>标记语言，用于给HTML设置样式</em>  
 <em>1.行内样式（内联样式）:使用在html标签内，由style属性引出</em>  
 <em>2.内部样式:推荐使用在head标签内，由标签名引出</em>  
-<em>3.外部样式:<span style="color:green">推荐使用</span>，样式写在文件中，由<code>&lt;link rel="stylesheet" href="文件位置" &gt;</code>标签引用(写在head里)</em>
+<em>3.外部样式:<span style="color:green">推荐使用</span>，样式写在文件中，由<code>&lt;link rel="stylesheet" href="文件位置" &gt;</code>标签引用(写在head里)</em>  
+<strong>样式表优先级</strong>  
+<em style="font-size:20px">行内元素>内部样式=外部样式</em>
