@@ -153,4 +153,13 @@
 <em>2.内部样式:推荐使用在head标签内，由标签名引出</em>  
 <em>3.外部样式:<span style="color:green">推荐使用</span>，样式写在文件中，由<code>&lt;link rel="stylesheet" href="文件位置" &gt;</code>标签引用(写在head里)</em>  
 <strong>样式表优先级</strong>  
-<em style="font-size:20px">行内元素>内部样式=外部样式</em>
+<em style="font-size:20px">行内元素>内部样式=外部样式</em>  
+<em style="font-size:20px">基础</em>  
+<em>1.通配选择器<code>*</code> 选中所有html元素</em>  
+<em>2.元素选择器<code>元素标签名</code> 选中某种元素</em>  
+<em>3.类选择器<code>.类名</code> 根据class的名称，来选中对应元素</em>  
+<strong>对于标签来说，要使用多个类名对应的CSS样式，书写如下：</strong>
+<strong>&lt;p class="类名1 类名2" &gt;</strong>  
+<em>4.id选择器<code>.id名</code> 根据id的名称，来选中对应元素,其余内容同class</em>  
+<em>5.交集选择器<code>(标签名.类名)|(.类名1.类名2)</code> 标签名只能有一个，类名可有多个</em>  
+<em>6.并集选择器<code>(标签名 , .类名)|(.类名1 , .类名2)</code> 可用标签名、ID名、类名，无数量限制</em>  
