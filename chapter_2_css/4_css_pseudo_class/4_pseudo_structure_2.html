@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类2</title>
+    <style>
+      /* 找最后一个p元素 */
+      /*div>p:last-child{*/
+      /*  color: greenyellow;*/
+      /*}*/
+      /* 找第三个p元素 */
+      /*div>p:nth-child(3){*/
+      /*  color: greenyellow;*/
+      /*}*/
+      /* 找奇数位的p元素 使用 odd、even（偶数） 也可以*/
+      /*div>p:nth-child(2n+1){*/
+      /*  color: greenyellow;*/
+      /*}*/
+      /* 找位数的官方公式 an+b
+         n-5 找前五个元素
+       */
+      /*div>p:nth-child(-n+5){*/
+      /*  color: greenyellow;*/
+      /*}*/
+      /* 第二种，找同类型中的第一个<p>标签 */
+      /*div>p:first-of-type{*/
+      /*  color: greenyellow;*/
+      /*}*/
+      /* 第二种，找同类型中的第3个元素 */
+      div>p:nth-of-type(3){
+        color: greenyellow;
+      }
+    </style>
+</head>
+<body>
+<!--第一种-->
+<!--    <div>-->
+<!--      <p>zs:92</p>-->
+<!--      <p>wq:87</p>-->
+<!--      <p>ww:82</p>-->
+<!--      <p>wz:80</p>-->
+<!--      <p>er:76</p>-->
+<!--      <p>po:72</p>-->
+<!--      <p>pi:68</p>-->
+<!--      <p>pj:62</p>-->
+<!--    </div>-->
+<!--第二种-->
+    <div>
+      <span>------span------</span>
+      <p>wq:87</p>
+      <p>ww:82</p>
+      <p>wz:80</p>
+      <span>------span------</span>
+      <p>po:72</p>
+      <p>pi:68</p>
+      <p>pj:62</p>
+      <span>------span------</span>
+    </div>
+</body>
+</html>

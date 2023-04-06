@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+      /* 直接选择 */
+      /*[title] {*/
+      /*  color: indianred;*/
+      /*}*/
+      /* 直接选择，且内容限定 */
+      /*[title="property1"] {*/
+      /*  color: indianred;*/
+      /*}*/
+      /* 直接选择，且内容限定，以p开头 */
+      /*[title^="p"] {*/
+      /*  color: indianred;*/
+      /*}*/
+      /* 直接选择，且内容限定，以3结尾 */
+      /*[title$="3"] {*/
+      /*  color: indianred;*/
+      /*}*/
+      /* 直接选择，且内容限定，包含pro */
+      [title*="pro"] {
+        color: indianred;
+      }
+    </style>
+</head>
+<body>
+    <div title="property1">属性1</div>
+    <div title="property2">属性2</div>
+    <div title="operty3">属性3</div>
+    <div title="operty4">属性4</div>
+</body>
+</html>

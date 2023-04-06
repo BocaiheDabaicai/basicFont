@@ -2,7 +2,7 @@
 <text style="color:blue">html、html5、css、css3</text>
 #### 元素标签
 1.标签不必在意显示效果，注重标签含义  
-2.块级元素独占一行，可内嵌块级元素、行内元素  
+2.块级元素独占一行，可内嵌块级元素、行内元素,&lt;p&gt;、&lt;h1&gt;~&lt;h6&gt;、&lt;dt&gt;之间不相互嵌套  
 3.行内元素占显示内容的大小，可内嵌行内元素
 #### 文本常用标签
 <em>1.em</em> 强调  
@@ -158,8 +158,13 @@
 <em>1.通配选择器<code>*</code> 选中所有html元素</em>  
 <em>2.元素选择器<code>元素标签名</code> 选中某种元素</em>  
 <em>3.类选择器<code>.类名</code> 根据class的名称，来选中对应元素</em>  
-<strong>对于标签来说，要使用多个类名对应的CSS样式，书写如下：</strong>
-<strong>&lt;p class="类名1 类名2" &gt;</strong>  
+<u>对于标签来说，要使用多个类名对应的CSS样式，书写如下：</u>
+<u>&lt;p class="类名1 类名2" &gt;</u>  
 <em>4.id选择器<code>.id名</code> 根据id的名称，来选中对应元素,其余内容同class</em>  
 <em>5.交集选择器<code>(标签名.类名)|(.类名1.类名2)</code> 标签名只能有一个，类名可有多个</em>  
 <em>6.并集选择器<code>(标签名 , .类名)|(.类名1 , .类名2)</code> 可用标签名、ID名、类名，无数量限制</em>  
+<em>7.后代选择器<code>(标签名 后代标签名)</code> 可以使用标签名、ID名、类名，且任意组合，下级标签无数量限制</em>  
+<em>8.子代选择器<code>(标签名 > 下一级标签名)</code> 可以使用标签名、ID名、类名，且任意组合</em>  
+<em>9.兄弟选择器<code>[相邻兄弟](标签名 + 标签名)//[通用兄弟](标签名 ~ 标签名)</code> 下一个紧邻的选择器//下面所有的选择器</em>  
+<em>10.属性选择器<code>(title title= title^= title$= title *=)</code>详见3_css_property.html</em>  
+<em>11.伪类选择器，内容较多，详见 4_css_pseudo_class portfolio</em>  
