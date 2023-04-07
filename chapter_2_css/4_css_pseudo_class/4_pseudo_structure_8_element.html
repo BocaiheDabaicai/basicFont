@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素伪类</title>
+    <style>
+        /* 伪元素，指的是元素的特殊位置 */
+        div::first-letter{
+            font-size: 40px;
+            color: cornflowerblue;
+        }
+        div::first-line{
+            font-size: 20px;
+        }
+        div::selection{
+            color: mediumpurple;
+            background-color: #ffacac;
+        }
+        input::placeholder{
+            color: cornflowerblue;
+        }
+        p::before{
+            content: "￥";
+        }
+        p::after{
+            content: ".00";
+        }
+    </style>
+</head>
+<body>
+    <div>By accepting yourself and being fully what you are, your presence can make others happy.First comes thought; then organization of that thought, into ideas and plans; then transformation of those plans into reality. The beginning, as you will observe, is in your imagination.</div>
+    <div>Small opportunities are often the beginning of great enterprises.To fly, we have to have resistance.To fly, we have to have resistance.Your outlook on life is a direct reflection on how much you like yourself.</div>
+    <div>His ultimate dream fantasy consisted of being content and sleeping eight hours in a row.When I was little I had a car door slammed shut on my hand and I still remember it quite vividly.Friends are those rare people who ask how we are and then wait to hear the answer.</div>
+    <div>Yesterday is history. Tomorrow is a mystery. And today? Today is a gift. That is why we call it the present.The only way to tell the truth is to speak with kindness. Only the words of a loving man can be heard.You can't trust without risk but neither can you live in a cocoon.</div><br>
+    <input type="text" placeholder="想输入点什么"><br>
+    <p>128</p>
+    <p>98</p>
+    <p>268</p>
+    <p>668</p>
+</body>
+</html>

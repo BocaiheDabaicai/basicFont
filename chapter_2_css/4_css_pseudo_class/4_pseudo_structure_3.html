@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结构伪类_3</title>
+    <style>
+      /* child 会检测标签名 type 排除无关标签 */
+      /*div>p:nth-last-child(3){*/
+      /*  color: greenyellow;*/
+      /*}*/
+      /*div>p:nth-last-of-type(4){*/
+      /*  color: cornflowerblue;*/
+      /*}*/
+      /* only-child 唯一的子元素 only-of-type 同类型唯一的元素 */
+      /*span:only-child{*/
+      /*  color: cornflowerblue;*/
+      /*}*/
+      /*span:only-of-type{*/
+      /*  color: cornflowerblue;*/
+      /*}*/
+      div:empty{
+          width: 100px;
+          height: 100px;
+          background-color: cornflowerblue;
+      }
+    </style>
+</head>
+<body>
+<!--    <div>-->
+<!--      <span>1234</span>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <span>span搜索</span>-->
+<!--      <p>威威</p>-->
+<!--      <p>饿饿</p>-->
+<!--      <p>天天</p>-->
+<!--      <p>请求</p>-->
+<!--      <p>安安</p>-->
+<!--      <p>存储</p>-->
+<!--      <p>版本</p>-->
+<!--    </div>-->
+    <div></div>
+</body>
+</html>

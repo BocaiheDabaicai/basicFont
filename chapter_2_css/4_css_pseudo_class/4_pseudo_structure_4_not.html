@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>否定伪类</title>
+    <style>
+      /*div>p:not(.fail){*/
+      /*  color: cornflowerblue;*/
+      /*}*/
+      /*div>p:not([title^="加油吧！"]){*/
+      /*  color: cornflowerblue;*/
+      /*}*/
+      div>p:not(:first-child){
+        color: cornflowerblue;
+      }
+    </style>
+</head>
+<body>
+    <div>
+      <p>87</p>
+      <p>85</p>
+      <p>81</p>
+      <p>74</p>
+      <p class="fail" title="加油吧！少年">59</p>
+      <p class="fail" title="加油吧！少年">55</p>
+    </div>
+</body>
+</html>
