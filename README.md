@@ -196,6 +196,13 @@
 <p>5.复合写法,font,(粗细)、(斜体)、大小、字体族</p>
 </blockquote>
 
+### 文本
+<blockquote>
+<p>1.文本颜色，名称、rgb、#xxxxxx、hsl</p>
+<p>2.文本间距，letter-spacing|word-spacing,单位px,负值缩小间距</p>
+<p>3.文本修饰，text-decoration,可选值 underline、overline、none、line-through,可选线 wavy dotted,且线颜色可以自定义</p>
+</blockquote>
+
 
 
 
