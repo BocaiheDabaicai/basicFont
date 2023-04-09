@@ -192,8 +192,8 @@
 <p>1.字体大小,font-size,最小字体与默认字体由浏览器的设置决定</p>
 <p>2.字体族,font-family,书写正确的字体名称,可以用逗号隔开多个字体,结尾使用serif||sans-serif(衬线字体||非衬线字体),且不需要加引号</p>
 <p>3.字体风格,font-style,主要有normal(默认)、italic(斜体，判别字体斜体是否存在)、oblique(斜体，强制斜体)</p>
-<p>3.字体粗细,font-weight,主要有lighter、normal、bold、bolder(少见),可以用数字表示100-400(lighter)、500-600(normal)、700-1000(bold)</p>
-<p>3.复合写法,font,(粗细)、(斜体)、大小、字体族</p>
+<p>4.字体粗细,font-weight,主要有lighter、normal、bold、bolder(少见),可以用数字表示100-400(lighter)、500-600(normal)、700-1000(bold)</p>
+<p>5.复合写法,font,(粗细)、(斜体)、大小、字体族</p>
 </blockquote>
 
 
