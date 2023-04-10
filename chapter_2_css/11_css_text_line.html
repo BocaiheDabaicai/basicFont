@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本行高、注意事项、文本对齐</title>
+    <style>
+      body{
+        font-family:"有爱魔兽圆体 CN Medium",sans-serif;
+      }
+      .container1{
+        font-size: 24px;
+        /* 一.像素写法 */
+        /*line-height:40px;*/
+        /* 二.设定值 */
+        /*line-height:normal;*/
+        /* 三.数值写法,字体大小的1.5倍(百分比写法支持)   */
+        /*line-height:1.5;*/
+          line-height:150%;
+      }
+      .container2{
+          font-size: 40px;
+          height:400px;
+          line-height:400px;
+          background-color:cornflowerblue;
+      }
+      .container3{
+          font-size:40px;
+          height:300px;
+          background-color:lightskyblue;
+      }
+      .title1{
+          font-size:20px;
+          background-color:orange;
+          /* 可选值 top middle baseline bottom */
+          vertical-align:middle;
+      }
+      table{
+          font-size:32px;
+      }
+      .td_data{
+          width:120px;
+          height:120px;
+          vertical-align:middle;
+          text-align:center
+      }
+    </style>
+</head>
+<body>
+    <div class="container1">LayerGroup类用来包装其它图层类的实例， 对实例集合做批量操作， 避免开发者对多个需要设置同样属性的图层实例做循环处理。
+      同时只要对LayerGroup执行过setMap方法后</div>
+    <div class="container2">你可以定义任意多的 store，但为了让使用 pinia 的益处最大化，你应该在不同的文件中去定义 store。</div>
+    <div class="container3">为了从 store 中提取属性时保持其响应性，你需要使用 storeToRefs()。<span class="title1">x基线</span>,X它将为每一个响应式属性创建引用。</div>
+    <div class="container4">Markdown 是一种轻量级的标记语言，可用于在纯文本文档中添加格式化元素。Markdown 由 John Gruber 于 2004 年创建，如今已成为世界上最受欢迎的标记语言之一。</div>
+    <table border="1" cellspacing="0">
+        <caption>人员信息</caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td_data">张三</td>
+                <td class="td_data">19</td>
+                <td class="td_data">男</td>
+            </tr>
+            <tr>
+                <td class="td_data">李四</td>
+                <td class="td_data">21</td>
+                <td class="td_data">男</td>
+            </tr>
+            <tr>
+                <td class="td_data">王五</td>
+                <td class="td_data">23</td>
+                <td class="td_data">男</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

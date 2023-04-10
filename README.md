@@ -180,13 +180,14 @@
 </blockquote>
 
 ### 颜色
-<em>1.像素,精细表达网页内容的单位名称</em>  
-<em>2.表达方式</em>  
-<em>----(1)官方指定名称_mdn_named_color</em>    
-<em>----(2)rgb与rgba,rgb调整红绿蓝三种光色,a调整透明性[1不透明、0完全透明]</em>    
-<em>----(3)hex与hexa,hex调整红绿蓝三种光色,#0bc3e6 每两位代表一种颜色(十六进制),末尾再添加两位代表透明度</em>    
-<em>----(4)hsl与hsla,hsl代表色相度，饱和度，亮度，hsl(x,y,z) 色相盘、百分比、百分比组成，<u style="color:red">很少使用</u></em>    
-<em>----(5)Ui设计师提供的设计稿</em>  
+<p>1.像素,精细表达网页内容的单位名称</p>  
+<p>2.表达方式</p>  
+<p>----(1)官方指定名称_mdn_named_color</p>    
+<p>----(2)rgb与rgba,rgb调整红绿蓝三种光色,a调整透明性[1不透明、0完全透明]</p>    
+<p>----(3)hex与hexa,hex调整红绿蓝三种光色,#0bc3e6 每两位代表一种颜色(十六进制),末尾再添加两位代表透明度</p>    
+<p>----(4)hsl与hsla,hsl代表色相度，饱和度，亮度，hsl(x,y,z) 色相盘、百分比、百分比组成，<u style="color:red">很少使用</u></p>    
+<p>----(5)Ui设计师提供的设计稿</p>  
+
 ### 字体
 <blockquote>
 <p>1.字体大小,font-size,最小字体与默认字体由浏览器的设置决定</p>
@@ -198,10 +199,31 @@
 
 ### 文本
 <blockquote>
-<p>1.文本颜色，名称、rgb、#xxxxxx、hsl</p>
+<p>1.文本颜色，名称、rgb、hex:#xxxxxx、hsl</p>
 <p>2.文本间距，letter-spacing|word-spacing,单位px,负值缩小间距</p>
 <p>3.文本修饰，text-decoration,可选值 underline、overline、none、line-through,可选线 wavy dotted,且线颜色可以自定义</p>
+<p>4.文本缩进，text-indent,一个字体大小值为一个缩进单位 </p>
+<p>5.文本对齐，text-align,可选值left(默认)、center、right </p>
+<p>6.字体详谈,设置字体大小,因字体设计原因,最终呈现的大小可能与实际大小有偏差;字体出现的位置总是偏下一些 </p>
+<p>7.文本行高,line-height,可选值px、normal、数值、百分比,设置时要尽量使行高大于字体大小 </p>
+<p>8.行高注意事项: </p>
+<p>----(1)行高最小值为0,超过该值则设置为normal</p>
+<p>----(2)可以继承到后代元素身上,在父类元素身上使用数值写法最佳</p>
+<p>----(3)line-height与height的关系,设置了height,则高度为height;没有设置height,则高度为line-height</p>
+<p>9.应用场景: </p>
+<p>----(1)多行文字控制行间距</p>
+<p>----(2)单行文字设置相对垂直居中,由height=line-height实现</p>
+<p>10.文本垂直对齐 <u>(对于单行文字)</u> :顶部无需调整,居中设置height=line-height,底部设置居中设置<code>height=line-height*2-(font-size)-动态调整值</code> </p>
+<p>11.垂直属性 vertical-align,常用设定值 top middle baseline bottom,middle指的是与父元素上x字母(假设字母)的中心对齐</p>
 </blockquote>
+
+### css列表属性
+| 属性名                 | 属性描述   | 属性值                                              |  
+|---------------------|--------|--------------------------------------------------|
+| list-style-type     | 设置列表符号 | none(常用) square disc(圆形) decimal(数字) alpha roman |
+| list-style-position | 设置标签位置 | inside outside(标签在内容外面)                          |
+| list-style-image    | 自定义标签  | url("图片位置")                                      |
+| list-style          | 复合语句   | type position image                              |
 
 
 
