@@ -148,27 +148,27 @@
 ----
 
 ### CSS 层叠样式表
-<em>标记语言，用于给HTML设置样式</em>  
-<em>1.行内样式（内联样式）:使用在html标签内，由style属性引出</em>  
-<em>2.内部样式:推荐使用在head标签内，由标签名引出</em>  
-<em>3.外部样式:<span style="color:green">推荐使用</span>，样式写在文件中，由<code>&lt;link rel="stylesheet" href="文件位置" &gt;</code>标签引用(写在head里)</em>  
+<p>标记语言，用于给HTML设置样式</p>  
+<p>1.行内样式（内联样式）:使用在html标签内，由style属性引出</p>  
+<p>2.内部样式:推荐使用在head标签内，由标签名引出</p>  
+<p>3.外部样式:<span style="color:green">推荐使用</span>，样式写在文件中，由<code>&lt;link rel="stylesheet" href="文件位置" &gt;</code>标签引用(写在head里)</p>  
 <strong>样式表优先级</strong>  
-<em style="font-size:20px">行内元素>内部样式=外部样式</em>  
-<em style="font-size:20px">基础</em>  
-<em>1.通配选择器<code>*</code> 选中所有html元素</em>  
-<em>2.元素选择器<code>元素标签名</code> 选中某种元素</em>  
-<em>3.类选择器<code>.类名</code> 根据class的名称，来选中对应元素</em>  
+<p style="font-size:20px">行内元素>内部样式=外部样式</p>  
+<p style="font-size:20px">基础</p>  
+<p>1.通配选择器<code>*</code> 选中所有html元素</p>  
+<p>2.元素选择器<code>元素标签名</code> 选中某种元素</p>  
+<p>3.类选择器<code>.类名</code> 根据class的名称，来选中对应元素</p>  
 <u>对于标签来说，要使用多个类名对应的CSS样式，书写如下：</u>
 <u>&lt;p class="类名1 类名2" &gt;</u>  
-<em>4.id选择器<code>.id名</code> 根据id的名称，来选中对应元素,其余内容同class</em>  
-<em>5.交集选择器<code>(标签名.类名)|(.类名1.类名2)</code> 标签名只能有一个，类名可有多个</em>  
-<em>6.并集选择器<code>(标签名 , .类名)|(.类名1 , .类名2)</code> 可用标签名、ID名、类名，无数量限制</em>  
-<em>7.后代选择器<code>(标签名 后代标签名)</code> 可以使用标签名、ID名、类名，且任意组合，下级标签无数量限制</em>  
-<em>8.子代选择器<code>(标签名 > 下一级标签名)</code> 可以使用标签名、ID名、类名，且任意组合</em>  
-<em>9.兄弟选择器<code>[相邻兄弟](标签名 + 标签名)//[通用兄弟](标签名 ~ 标签名)</code> 下一个紧邻的选择器//下面所有的选择器</em>  
-<em>10.属性选择器<code>(title title= title^= title$= title *=)</code>详见3_css_property.html</em>  
-<em>11.伪类选择器，内容较多，详见 4_css_pseudo_class portfolio</em>  
-<em>12.选择器优先级，!important>行内样式>ID选择器>类选择器>元素选择器>通配选择器>继承样式</em>  
+<p>4.id选择器<code>.id名</code> 根据id的名称，来选中对应元素,其余内容同class</p>  
+<p>5.交集选择器<code>(标签名.类名)|(.类名1.类名2)</code> 标签名只能有一个，类名可有多个</p>  
+<p>6.并集选择器<code>(标签名 , .类名)|(.类名1 , .类名2)</code> 可用标签名、ID名、类名，无数量限制</p>  
+<p>7.后代选择器<code>(标签名 后代标签名)</code> 可以使用标签名、ID名、类名，且任意组合，下级标签无数量限制</p>  
+<p>8.子代选择器<code>(标签名 > 下一级标签名)</code> 可以使用标签名、ID名、类名，且任意组合</p>  
+<p>9.兄弟选择器<code>[相邻兄弟](标签名 + 标签名)//[通用兄弟](标签名 ~ 标签名)</code> 下一个紧邻的选择器//下面所有的选择器</p>  
+<p>10.属性选择器<code>(title title= title^= title$= title *=)</code>详见3_css_property.html</p>  
+<p>11.伪类选择器，内容较多，详见 4_css_pseudo_class portfolio</p>  
+<p>12.选择器优先级，!important>行内样式>ID选择器>类选择器>元素选择器>通配选择器>继承样式</p>  
 <code>对于复合的css样式，根据权重确定显示哪种样式</code>  
 <code>(x,y,z)<=>(ID选择器,类、伪类、属性选择器,元素、伪元素选择器)</code>  
 <code>样式权重高，则优先显示；权重相同，后者覆盖</code>  
