@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格样式</title>
+    <style>
+        table {
+            /*border-width: 2px;*/
+            /*border-color: lightskyblue;*/
+            /*border-style: solid;*/
+            border: 2px lightskyblue solid;
+            width: 500px;
+            /*控制表格列宽*/
+            table-layout:fixed;
+            /*控制单元格间距 px 不能合并单元格*/
+            /*border-spacing:2px;*/
+            /*合并相邻单元格*/
+            border-collapse: collapse;
+            /*隐藏没有内容的单元格*/
+            /*empty-cells:hide;*/
+            /*设置表格标题位置*/
+            caption-side:top;
+
+        }
+
+        td, th {
+            border: 2px orange solid;
+        }
+        .number{
+            width:50px;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <caption>人员信息</caption>
+    <thead>
+    <tr>
+        <th class="number">序号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+        <th>性别</th>
+        <th>政治面貌</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>张三</td>
+        <td>21</td>
+        <td>男</td>
+        <td>共青团员</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>李四</td>
+        <td>22</td>
+        <td>男</td>
+        <td>共产党员</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>王五</td>
+        <td>19</td>
+        <td></td>
+        <td>共青团员</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>赵六</td>
+        <td>21</td>
+        <td>男</td>
+        <td>群众</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

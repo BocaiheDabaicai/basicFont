@@ -225,10 +225,61 @@
 | list-style-position | 设置标签位置 | inside outside(标签在内容外面)                          |
 | list-style-image    | 自定义标签  | url("图片位置")                                      |
 | list-style          | 复合语句   | type position image                              |
+### table表格属性
+| 属性名             | 属性描述     | 属性值                                          |  
+|-----------------|----------|----------------------------------------------|
+| border-width    | 设置边框宽度   | 像素值                                          |
+| border-color    | 设置边框颜色   | 颜色值 rgb hex hsl                              |
+| border-style    | 设置边框样式   | none dashed solid(实线) dotted(点线) double(双实线) |
+| border          | 复合语句     | width color style                            | 
+| table-layout    | 控制表格列宽   | fix(固定) auto                                 |
+| border-style    | 设置边框样式   | none dashed solid(实线) dotted(点线) double(双实线) |
+| border-spacing  | 控制单元格间距  | 单位px , 使用时不能合并单元格                            |
+| border-collapse | 合并相邻单元格  | separate collapse                            |
+| empty-cells     | 消除空单元格   | show hide  使用时不能合并单元格,同时设置有单元格间距             |
+| caption-side    | 设置表格表题位置 | top hide                                     |
+<u>border以上的元素(包括border)在其它元素中也可以使用</u>
+### background背景属性
+| 属性名                 | 属性描述       | 属性值                                             |  
+|---------------------|------------|-------------------------------------------------|
+| background-color    | 设置背景颜色     | 默认为 transparent(透明色)                            |
+| background-image    | 设置背景图片     | url("图片位置")                                     |
+| background-repeat   | 设置背景图片重复方式 | repeat no-repeat repeat-x repeat-y              |
+| background-position | 设置背景图片的位置  | 水平与垂直两个参数 默认值为center  垂直方向上居中位置为center 可以用像素点表达 |
+| background          | 复合表达       | color image repeat position                     |
+### cursor鼠标属性
+<p>cursor 设置光标样式 pointer(常用)</p>
+<p>自定义光标 设置方式: url("光标样式"),pointer</p>
 
-
-
-
-
-
-
+### 常用长度单位属性
+| 单位名称       | 单位描述 | 备注                                         |  
+|------------|------|--------------------------------------------|
+| px         | 像素单位 | 无                                          |
+| em         | 大小单位 | 元素大小 = em值 * 字体大小(默认为浏览器的值或父元素的值)          |
+| rem        | 大小单位 | 元素大小 = rem值 * 字体大小(从html元素上开始寻找字体值,直到当前元素) |
+| %          | 百分比  | 从祖先元素身上寻找值,最终将 值*百分比 给予属性                  |
+### 显示模式
+| 模式名称         | 模式描述         | 备注                                 |  
+|--------------|--------------|------------------------------------|
+| block        | 块级元素         | 独占一行 宽度撑满父元素 高度由元素大小决定 可以通过css设置宽高 |
+| inline       | 行内元素(内联元素)   | 宽度、高度由内容撑开 无法通过css设置宽高             |
+| inline-block | 行内块单位(内联块元素) | 内容与行内元素一致 可以通过css设置宽高              |
+### 显示模式总结
+<blockquote style="background:rgba(139,218,139,0.21)">
+<h3>块元素</h3>
+<p>1.主体结构标签:&lt;html&gt; &lt;body&gt;</p>
+<p>2.排版标签:&lt;h1&gt;~&lt;h6&gt; &lt;hr&gt; &lt;p&gt; &lt;pre&gt; &lt;div&gt;</p>
+<p>3.列表标签:&lt;ul&gt; &lt;ol&gt; &lt;li&gt; &lt;dl&gt; &lt;dt&gt; &lt;dd&<g></g>t;</p>
+<p>4.表格标签:&lt;table&gt; &lt;thead&gt; &lt;tbody&gt; &lt;tfoot&gt; &lt;tr&gt; &lt;caption&<g></g>t;</p>
+<p>5.其他:&lt;form&gt; &lt;option&gt;</p>
+<h3>行内元素</h3>
+<p>1.文本标签:&lt;br&gt; &lt;body&gt;</p>
+<p>2.其他:&lt;a&gt; &lt;label&gt;</p>
+<h3>行内块元素</h3>
+<p>1.图片:&lt;img&gt;</p>
+<p>2.单元格:&lt;th&gt; &lt;td&gt;</p>
+<p>3.表单控件:&lt;input&gt; &lt;textarea&gt; &lt;select&gt; &lt;button&gt;</p>
+<p>4.框架标签:&lt;iframe&gt;</p>
+<h3>display属性</h3>
+<p>支持类型为 block inline-block inline none</p>
+</blockquote>
