@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型、内容区、默认宽度、内边距</title>
+    <style>
+        .container{
+            width:400px;
+            height:400px;
+            /* 背景颜色会填充内边距 */
+            padding:20px;
+            /* 边框的颜色会覆盖在背景色上面 */
+            border:10px dotted darkslategrey;
+            margin:50px;
+            font-size:36px;
+            background-color:rosybrown;
+        }
+        .container_content{
+            /*width:800px;*/
+            min-width:600px;
+            max-width:1000px;
+            height:200px;
+            background-color:aquamarine;
+        }
+        .container_defaultWidth{
+            height:200px;
+            background-color:cornflowerblue;
+        }
+        .container_padding{
+            width:400px;
+            height:400px;
+            font-size:32px;
+            background-color: mediumvioletred;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">你好啊!</div>
+    <div class="container_content">您可以在表格中设置文本格式。例如，您可以添加链接，代码（仅反引号（`）中的单词或短语，而不是代码块）和强调。您不能添加标题，块引用，列表，#在表中转义管道字符</div><br>
+    <div class="container_defaultWidth">您可以在表格中设置文本格式。例如，您可以添加链接，代码（仅反引号（`）中的单词或短语，而不是代码块）和强调。您不能添加标题，块引用，列表，#在表中转义管道字符</div><br>
+    <div class="container_padding">您可以在表格中设置文本格式。例如，您可以添加链接，代码（仅反引号（`）中的单词或短语，而不是代码块）和强调。您不能添加标题，块引用，列表，#在表中转义管道字符</div>
+</body>
+</html>

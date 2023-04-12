@@ -39,23 +39,23 @@
 <blockquote>
 <p><em>——属性值</em></p>  
 <p>target</p>  
-    _self: 在本标签进行跳转</p>
+    _self: 在本标签进行跳转<br>
     _blank: 在新标签进行跳转
 <p>download</p>
 填写下载名或不填
 <p><em>——浏览器支持的文件</em></p>
-<code>jpg gif mp4 pdf</code><p/>
+<code>jpg gif mp4 pdf</code><br>
 <code>zip 不可以直接打开</code>
 <p><em>——锚点</em></p>
-<code>跳转:href="#(锚点名字)"</code><p/>
-<code>回到顶部:href="#"</code><p/>
-<code>刷新页面:href=""</code><p/>
-<code>命名_1:name="(锚点名字)"</code><p/>
-<code>命名_2:id="(锚点名字)"<strong> 推荐</strong></code><p/>
+<code>跳转:href="#(锚点名字)"</code><br>
+<code>回到顶部:href="#"</code><br>
+<code>刷新页面:href=""</code><br>
+<code>命名_1:name="(锚点名字)"</code><br>
+<code>命名_2:id="(锚点名字)"<strong> 推荐</strong></code><br>
 <p><em>——唤醒应用</em></p>
-<code>打电话:href="tel:电话号码"</code><p/>
-<code>发邮件:href="mailto:邮件名"</code><p/>
-<code>发短信:href="sms:收件人"</code><p/>
+<code>打电话:href="tel:电话号码"</code><br>
+<code>发邮件:href="mailto:邮件名"</code><br>
+<code>发短信:href="sms:收件人"</code><br>
 </blockquote>
 
 #### 列表
@@ -106,7 +106,7 @@
 <code>5.name 边框名，配合target使用</code>  
 #### 字符实体
 <blockquote>
-    <p style="color: red">1.空格 &nbps;</p>
+    <p style="color: red">1.空格 &nbps ;</p>
     <p style="color: red">2.小于 &lt;</p>
     <p style="color: red">3.大于 &gt;</p>
     <p style="color: red">4.和 &amp;</p>
@@ -283,3 +283,29 @@
 <h3>display属性</h3>
 <p>支持类型为 block inline-block inline none</p>
 </blockquote>
+
+### 盒子模型
+| 组成名称    | 组成描述 | 备注       |  
+|---------|------|----------|
+| content | 内容区  | 放入元素内容   |
+| padding | 内边距  | 紧贴内容的补白区 |
+| border  | 边框   | 盒子的边距    |
+| margin  | 外边距  | 盒子和外界的距离 |
+<p>1.<code>盒子的大小 = 内容区 + (padding + border) * 2</code></p>
+<p>2.margin只影响盒子的位置</p>
+<p>3.背景色会产生在内容区、内边距、边框上，而边框的颜色会覆盖在背景色上</p>
+
+#### 盒子内容
+| 组成名称                                                                | 组成描述    | 备注                                                                                                                                                                                                                                      |  
+|---------------------------------------------------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| width                                                               | 宽度      | min-width max-width 二者不与width一起使用                                                                                                                                                                                                       |
+| height                                                              | 高度      | min-height max-height 二者不与height一起使用                                                                                                                                                                                                    |
+| 默认宽度                                                                | 宽度      | 不设置宽度,盒子宽度 = 父容器宽度 - margin*2; <br>内容区宽度 = 盒子宽度 - (padding + border) * 2                                                                                                                                                                |
+| padding详述                                                           | 内边距     | 有四种属性 padding-left padding-top padding-right padding-bottom<br> 四种设置方式 <br>padding:x(设置四个方向) <br>padding:x y(设置上下、左右) <br>padding:x y z(设置上、左右、下) <br>padding:x y z e(上右、下左)                                                            |
+| border<p>border-left<p>border-top<p>border-right<p>border-bottom<p> | 边框类型    | 有三种属性 width color style  也可以单独设置，例如 border-left-color                                                                                                                                                                                   |
+| margin详述                                                            | 外边框     | 有四个属性: margin-left margin-top margin-right margin-bottom<br>注意事项:<br>1.子元素的margin参考父元素的content进行计算<br>2.margin的设置值是为边框之外产生空白区域<br>3.块级元素、行内块元素支持四个方向的margin,行内元素仅支持左右方向的margin<br>4.margin的值可以设置为auto,若左右方向为auto,则元素居中<br>5.margin值可以为负 |
+| margin塌陷问题                                                          | 父元素、子元素 | 首个子元素设置margin-top值或末尾子元素设置margin-bottom值，导致margin值赋予父元素<br>解决方法:<br>1.父元素设置padding值<br>2.父元素设置border值<br>3.父元素设置css样式,overflow:hidden                                                                                                   |
+| margin合并问题                                                          | 子元素、子元素 | 子元素之间相对的margin值进行设置,导致呈现的值为最大的margin值<br>解决方法:只为一个元素设置一个margin值即可                                                                                                                                                                       |
+<p>1.padding 不能为负值</p>
+<p>2.行内元素 不要设置上下边距，会引发显示冲突</p>
+<p>3.块级、行内块元素 四个方向可以顺利设置</p>
