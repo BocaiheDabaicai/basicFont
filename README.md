@@ -1,5 +1,5 @@
 ### 自己的学习内容
-<text style="color:blue">html、html5、css、css3</text>
+<text style="color:blue">html、html5、css、css3</text> --2023.03.23
 #### 元素标签
 1.标签不必在意显示效果，注重标签含义  
 2.块级元素独占一行，可内嵌块级元素、行内元素,&lt;p&gt;、&lt;h1&gt;~&lt;h6&gt;、&lt;dt&gt;之间不相互嵌套  
@@ -296,16 +296,34 @@
 <p>3.背景色会产生在内容区、内边距、边框上，而边框的颜色会覆盖在背景色上</p>
 
 #### 盒子内容
-| 组成名称                                                                | 组成描述    | 备注                                                                                                                                                                                                                                      |  
-|---------------------------------------------------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| width                                                               | 宽度      | min-width max-width 二者不与width一起使用                                                                                                                                                                                                       |
-| height                                                              | 高度      | min-height max-height 二者不与height一起使用                                                                                                                                                                                                    |
-| 默认宽度                                                                | 宽度      | 不设置宽度,盒子宽度 = 父容器宽度 - margin*2; <br>内容区宽度 = 盒子宽度 - (padding + border) * 2                                                                                                                                                                |
-| padding详述                                                           | 内边距     | 有四种属性 padding-left padding-top padding-right padding-bottom<br> 四种设置方式 <br>padding:x(设置四个方向) <br>padding:x y(设置上下、左右) <br>padding:x y z(设置上、左右、下) <br>padding:x y z e(上右、下左)                                                            |
-| border<p>border-left<p>border-top<p>border-right<p>border-bottom<p> | 边框类型    | 有三种属性 width color style  也可以单独设置，例如 border-left-color                                                                                                                                                                                   |
-| margin详述                                                            | 外边框     | 有四个属性: margin-left margin-top margin-right margin-bottom<br>注意事项:<br>1.子元素的margin参考父元素的content进行计算<br>2.margin的设置值是为边框之外产生空白区域<br>3.块级元素、行内块元素支持四个方向的margin,行内元素仅支持左右方向的margin<br>4.margin的值可以设置为auto,若左右方向为auto,则元素居中<br>5.margin值可以为负 |
-| margin塌陷问题                                                          | 父元素、子元素 | 首个子元素设置margin-top值或末尾子元素设置margin-bottom值，导致margin值赋予父元素<br>解决方法:<br>1.父元素设置padding值<br>2.父元素设置border值<br>3.父元素设置css样式,overflow:hidden                                                                                                   |
-| margin合并问题                                                          | 子元素、子元素 | 子元素之间相对的margin值进行设置,导致呈现的值为最大的margin值<br>解决方法:只为一个元素设置一个margin值即可                                                                                                                                                                       |
+| 组成名称                                                                | 组成描述               | 备注                                                                                                                                                                                                                                      |  
+|---------------------------------------------------------------------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| width                                                               | 宽度                 | min-width max-width 二者不与width一起使用                                                                                                                                                                                                       |
+| height                                                              | 高度                 | min-height max-height 二者不与height一起使用                                                                                                                                                                                                    |
+| 默认宽度                                                                | 宽度                 | 不设置宽度,盒子宽度 = 父容器宽度 - margin*2; <br>内容区宽度 = 盒子宽度 - (padding + border) * 2                                                                                                                                                                |
+| padding详述                                                           | 内边距                | 有四种属性 padding-left padding-top padding-right padding-bottom<br> 四种设置方式 <br>padding:x(设置四个方向) <br>padding:x y(设置上下、左右) <br>padding:x y z(设置上、左右、下) <br>padding:x y z e(上右、下左)                                                            |
+| border<p>border-left<p>border-top<p>border-right<p>border-bottom<p> | 边框类型               | 有三种属性 width color style  也可以单独设置，例如 border-left-color                                                                                                                                                                                   |
+| margin详述                                                            | 外边框                | 有四个属性: margin-left margin-top margin-right margin-bottom<br>注意事项:<br>1.子元素的margin参考父元素的content进行计算<br>2.margin的设置值是为边框之外产生空白区域<br>3.块级元素、行内块元素支持四个方向的margin,行内元素仅支持左右方向的margin<br>4.margin的值可以设置为auto,若左右方向为auto,则元素居中<br>5.margin值可以为负 |
+| margin塌陷问题                                                          | 父元素、子元素            | 首个子元素设置margin-top值或末尾子元素设置margin-bottom值，导致margin值赋予父元素<br>解决方法:<br>1.父元素设置padding值<br>2.父元素设置border值<br>3.父元素设置css样式,overflow:hidden                                                                                                   |
+| margin合并问题                                                          | 子元素、子元素            | 子元素之间相对的margin值进行设置,导致呈现的值为最大的margin值<br>解决方法:只为一个元素设置一个margin值即可                                                                                                                                                                       |
+| 内容溢出问题                                                              | 内容超过内容区的限定范围       | 使用 overflow ,可选值 hidden auto visible scroll<br>overflow-x overflow-y 仍在实验中,不推荐使用                                                                                                                                                        |
+| 隐藏元素的方式                                                             | 两种方式               | display:none 消除元素并清理占位、visibility:hidden(show) 消除元素但不清理占位                                                                                                                                                                               |
+| 行内元素、行内块元素之间的空白问题                                                   | 元素之间的空格会被设置为一个空白字符 | 设置父元素的font-size:0;将元素放在同一行(不推荐)                                                                                                                                                                                                         |
+| 行内块元素的幽灵空白问题                                                        | 行内块元素秉持基线对齐属性      | 设置行内块元素vertical-align不为baseline即可;display(不推荐)、父元素font-size方式(不推荐)                                                                                                                                                                      |
 <p>1.padding 不能为负值</p>
 <p>2.行内元素 不要设置上下边距，会引发显示冲突</p>
 <p>3.块级、行内块元素 四个方向可以顺利设置</p>
+<p style="color:#e15656">4.样式继承,继承文字样式,不继承盒子模型样式</p>
+<p style="color:#e15656">5.布局技巧: </p>
+<p><code>(1)行内元素、行内块元素可以在父元素中使用文本属性处理</code></p>
+<p><code>(2)子元素水平居中,块元素使用margin:0 auto;行内块元素、行内元素使用text-align:center</code></p>
+<p><code>(3)子元素垂直居中<br>----块元素使用margin-top:(父元素content-子元素盒子高度)/2 px;<br>----行内块元素、行内元素,父元素设置line-height:(height)px,每个子元素加上vertical-align:middle<br>----若想实现绝对垂直居中,父元素设置font-size:0px;</code></p>
+
+## 浮动(float)
+<p>简介:起初用于文字环绕图片,现在是主流的页面布局方式</p>
+<p>特点:</p>
+<p><code>1.脱离文档流</code></p>
+<p><code>2.浮动后宽高由内容撑开,可以设置</code></p>
+<p><code>3.不会独占一行，且可以与其他元素共用一行</code></p>
+<p><code>4.不出现margin合并与塌陷问题</code></p>
+<p><code>5.不会被当作文本处理,即不出现行内空白问题</code></p>
