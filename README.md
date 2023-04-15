@@ -1,9 +1,9 @@
 ### 自己的学习内容
 <text style="color:blue">html、html5、css、css3</text> --2023.03.23
 #### 元素标签
-1.标签不必在意显示效果，注重标签含义  
-2.块级元素独占一行，可内嵌块级元素、行内元素,&lt;p&gt;、&lt;h1&gt;~&lt;h6&gt;、&lt;dt&gt;之间不相互嵌套  
-3.行内元素占显示内容的大小，可内嵌行内元素
+1.标签不必在意显示效果,注重标签含义  
+2.块级元素独占一行,可内嵌块级元素、行内元素,&lt;p&gt;、&lt;h1&gt;~&lt;h6&gt;、&lt;dt&gt;之间不相互嵌套  
+3.行内元素占显示内容的大小,可内嵌行内元素
 #### 文本常用标签
 <em>1.em</em> 强调  
 <strong>2.strong</strong> 强调   
@@ -29,12 +29,12 @@
 本地绝对路径  
 网络绝对路径
 #### 图片格式介绍 
-<kbd><var>jpg jpeg</var> 损失细节存储，不支持动态图、透明背景</kbd>  
-<kbd><var>png</var> 无损压缩，不支持动态图</kbd>  
-<kbd><var>bmp</var> 不进行压缩，保存更多细节，不支持动态图、透明背景 == png+</kbd>  
-<kbd><var>gif</var> 显示动态图，显示颜色有限</kbd>  
-<kbd><var>webp</var> 显示网页图片，支持动态图，兼容性不足</kbd>  
-<kbd><var>base64</var> 显示网页图片，图片本身以编码形式显示</kbd> 
+<kbd><var>jpg jpeg</var> 损失细节存储,不支持动态图、透明背景</kbd>  
+<kbd><var>png</var> 无损压缩,不支持动态图</kbd>  
+<kbd><var>bmp</var> 不进行压缩,保存更多细节,不支持动态图、透明背景 == png+</kbd>  
+<kbd><var>gif</var> 显示动态图,显示颜色有限</kbd>  
+<kbd><var>webp</var> 显示网页图片,支持动态图,兼容性不足</kbd>  
+<kbd><var>base64</var> 显示网页图片,图片本身以编码形式显示</kbd> 
 #### 超链接
 <blockquote>
 <p><em>——属性值</em></p>  
@@ -87,7 +87,7 @@
 <code>1.td、th的设置会导致整行或整列的宽高改变</code>
 #### 常用小标签
 <code>1. br 换行</code>  
-<code>2. hr 分割,若实现修饰线，后期用css</code>  
+<code>2. hr 分割,若实现修饰线,后期用css</code>  
 <code>3. pre 按原代码显示</code>
 #### 表单
 <em>form 属性</em>  
@@ -95,15 +95,15 @@
 <code>2.target: 新页签的打开方式 </code>  
 <code>3.method: 控制提交方式 </code>  
 <code>4.disable: 用在 input textarea select option 上禁用标签 </code>  
-<code>5.fieldset legend: 创造信息领域，外部出现边框，legend为标题 </code>  
-<em>特别地，使用<code>input</code>输入框需要填入name属性，指定提交数据的名称</em>
+<code>5.fieldset legend: 创造信息领域,外部出现边框,legend为标题 </code>  
+<em>特别地,使用<code>input</code>输入框需要填入name属性,指定提交数据的名称</em>
 #### iframe框架
 <em>属性</em>  
-<code>1.src 链接地址，单独展示使用</code>  
+<code>1.src 链接地址,单独展示使用</code>  
 <code>2.width 宽度</code>  
 <code>3.height 长度</code>  
-<code>4.frameborder 边框，可选值 0 1</code>  
-<code>5.name 边框名，配合target使用</code>  
+<code>4.frameborder 边框,可选值 0 1</code>  
+<code>5.name 边框名,配合target使用</code>  
 #### 字符实体
 <blockquote>
     <p style="color: red">1.空格 &nbps ;</p>
@@ -126,10 +126,10 @@
 </blockquote>
 
 #### 全局属性
-<code>1.id 运用在body里，且非&lt;title&gt;标签上</code>  
+<code>1.id 运用在body里,且非&lt;title&gt;标签上</code>  
 <code>2.class 主要使用在&lt;div&gt;标签上,接收css样式</code>  
 <code>3.style 主要使用在&lt;div&gt;标签上,编写css样式</code>  
-<code>4.dir 运用在body里，且非&lt;title&gt;标签上,使用ltr、rtl调整内容的位置</code>  
+<code>4.dir 运用在body里,且非&lt;title&gt;标签上,使用ltr、rtl调整内容的位置</code>  
 <code>5.title 主要使用在&lt;div&gt;标签上,使用ltr、rtl调整内容的位置</code>  
 <code>6.lang 主要使用在&lt;div&gt;标签上,标注内容的语言</code>
 #### meta
@@ -148,35 +148,35 @@
 ----
 
 ### CSS 层叠样式表
-<p>标记语言，用于给HTML设置样式</p>  
-<p>1.行内样式（内联样式）:使用在html标签内，由style属性引出</p>  
-<p>2.内部样式:推荐使用在head标签内，由标签名引出</p>  
-<p>3.外部样式:<span style="color:green">推荐使用</span>，样式写在文件中，由<code>&lt;link rel="stylesheet" href="文件位置" &gt;</code>标签引用(写在head里)</p>  
+<p>标记语言,用于给HTML设置样式</p>  
+<p>1.行内样式（内联样式）:使用在html标签内,由style属性引出</p>  
+<p>2.内部样式:推荐使用在head标签内,由标签名引出</p>  
+<p>3.外部样式:<span style="color:green">推荐使用</span>,样式写在文件中,由<code>&lt;link rel="stylesheet" href="文件位置" &gt;</code>标签引用(写在head里)</p>  
 <strong>样式表优先级</strong>  
 <p style="font-size:20px">行内元素>内部样式=外部样式</p>  
 <p style="font-size:20px">基础</p>  
 <p>1.通配选择器<code>*</code> 选中所有html元素</p>  
 <p>2.元素选择器<code>元素标签名</code> 选中某种元素</p>  
-<p>3.类选择器<code>.类名</code> 根据class的名称，来选中对应元素</p>  
-<u>对于标签来说，要使用多个类名对应的CSS样式，书写如下：</u>
+<p>3.类选择器<code>.类名</code> 根据class的名称,来选中对应元素</p>  
+<u>对于标签来说,要使用多个类名对应的CSS样式,书写如下：</u>
 <u>&lt;p class="类名1 类名2" &gt;</u>  
-<p>4.id选择器<code>.id名</code> 根据id的名称，来选中对应元素,其余内容同class</p>  
-<p>5.交集选择器<code>(标签名.类名)|(.类名1.类名2)</code> 标签名只能有一个，类名可有多个</p>  
-<p>6.并集选择器<code>(标签名 , .类名)|(.类名1 , .类名2)</code> 可用标签名、ID名、类名，无数量限制</p>  
-<p>7.后代选择器<code>(标签名 后代标签名)</code> 可以使用标签名、ID名、类名，且任意组合，下级标签无数量限制</p>  
-<p>8.子代选择器<code>(标签名 > 下一级标签名)</code> 可以使用标签名、ID名、类名，且任意组合</p>  
+<p>4.id选择器<code>.id名</code> 根据id的名称,来选中对应元素,其余内容同class</p>  
+<p>5.交集选择器<code>(标签名.类名)|(.类名1.类名2)</code> 标签名只能有一个,类名可有多个</p>  
+<p>6.并集选择器<code>(标签名 , .类名)|(.类名1 , .类名2)</code> 可用标签名、ID名、类名,无数量限制</p>  
+<p>7.后代选择器<code>(标签名 后代标签名)</code> 可以使用标签名、ID名、类名,且任意组合,下级标签无数量限制</p>  
+<p>8.子代选择器<code>(标签名 > 下一级标签名)</code> 可以使用标签名、ID名、类名,且任意组合</p>  
 <p>9.兄弟选择器<code>[相邻兄弟](标签名 + 标签名)//[通用兄弟](标签名 ~ 标签名)</code> 下一个紧邻的选择器//下面所有的选择器</p>  
 <p>10.属性选择器<code>(title title= title^= title$= title *=)</code>详见3_css_property.html</p>  
-<p>11.伪类选择器，内容较多，详见 4_css_pseudo_class portfolio</p>  
-<p>12.选择器优先级，!important>行内样式>ID选择器>类选择器>元素选择器>通配选择器>继承样式</p>  
-<code>对于复合的css样式，根据权重确定显示哪种样式</code>  
+<p>11.伪类选择器,内容较多,详见 4_css_pseudo_class portfolio</p>  
+<p>12.选择器优先级,!important>行内样式>ID选择器>类选择器>元素选择器>通配选择器>继承样式</p>  
+<code>对于复合的css样式,根据权重确定显示哪种样式</code>  
 <code>(x,y,z)<=>(ID选择器,类、伪类、属性选择器,元素、伪元素选择器)</code>  
-<code>样式权重高，则优先显示；权重相同，后者覆盖</code>  
+<code>样式权重高,则优先显示；权重相同,后者覆盖</code>  
 
 ### <em>css三大特性</em>
 <blockquote>
-<p>1.层叠性,样式发生冲突(同样的名称，被设置不同的值)，会根据一定的规则进行覆盖</p>
-<p>2.继承性,元素会自动拥有其父元素、其祖先元素上设置的某些样式，优先获得近处的样式</p>
+<p>1.层叠性,样式发生冲突(同样的名称,被设置不同的值),会根据一定的规则进行覆盖</p>
+<p>2.继承性,元素会自动拥有其父元素、其祖先元素上设置的某些样式,优先获得近处的样式</p>
 <p>3.优先性,优先级与权重</p>
 </blockquote>
 
@@ -186,25 +186,25 @@
 <p>----(1)官方指定名称_mdn_named_color</p>    
 <p>----(2)rgb与rgba,rgb调整红绿蓝三种光色,a调整透明性[1不透明、0完全透明]</p>    
 <p>----(3)hex与hexa,hex调整红绿蓝三种光色,#0bc3e6 每两位代表一种颜色(十六进制),末尾再添加两位代表透明度</p>    
-<p>----(4)hsl与hsla,hsl代表色相度，饱和度，亮度，hsl(x,y,z) 色相盘、百分比、百分比组成，<u style="color:red">很少使用</u></p>    
+<p>----(4)hsl与hsla,hsl代表色相度,饱和度,亮度,hsl(x,y,z) 色相盘、百分比、百分比组成,<u style="color:red">很少使用</u></p>    
 <p>----(5)Ui设计师提供的设计稿</p>  
 
 ### 字体
 <blockquote>
 <p>1.字体大小,font-size,最小字体与默认字体由浏览器的设置决定</p>
 <p>2.字体族,font-family,书写正确的字体名称,可以用逗号隔开多个字体,结尾使用serif||sans-serif(衬线字体||非衬线字体),且不需要加引号</p>
-<p>3.字体风格,font-style,主要有normal(默认)、italic(斜体，判别字体斜体是否存在)、oblique(斜体，强制斜体)</p>
+<p>3.字体风格,font-style,主要有normal(默认)、italic(斜体,判别字体斜体是否存在)、oblique(斜体,强制斜体)</p>
 <p>4.字体粗细,font-weight,主要有lighter、normal、bold、bolder(少见),可以用数字表示100-400(lighter)、500-600(normal)、700-1000(bold)</p>
 <p>5.复合写法,font,(粗细)、(斜体)、大小、字体族</p>
 </blockquote>
 
 ### 文本
 <blockquote>
-<p>1.文本颜色，名称、rgb、hex:#xxxxxx、hsl</p>
-<p>2.文本间距，letter-spacing|word-spacing,单位px,负值缩小间距</p>
-<p>3.文本修饰，text-decoration,可选值 underline、overline、none、line-through,可选线 wavy dotted,且线颜色可以自定义</p>
-<p>4.文本缩进，text-indent,一个字体大小值为一个缩进单位 </p>
-<p>5.文本对齐，text-align,可选值left(默认)、center、right </p>
+<p>1.文本颜色,名称、rgb、hex:#xxxxxx、hsl</p>
+<p>2.文本间距,letter-spacing|word-spacing,单位px,负值缩小间距</p>
+<p>3.文本修饰,text-decoration,可选值 underline、overline、none、line-through,可选线 wavy dotted,且线颜色可以自定义</p>
+<p>4.文本缩进,text-indent,一个字体大小值为一个缩进单位 </p>
+<p>5.文本对齐,text-align,可选值left(默认)、center、right </p>
 <p>6.字体详谈,设置字体大小,因字体设计原因,最终呈现的大小可能与实际大小有偏差;字体出现的位置总是偏下一些 </p>
 <p>7.文本行高,line-height,可选值px、normal、数值、百分比,设置时要尽量使行高大于字体大小 </p>
 <p>8.行高注意事项: </p>
@@ -293,7 +293,7 @@
 | margin  | 外边距  | 盒子和外界的距离 |
 <p>1.<code>盒子的大小 = 内容区 + (padding + border) * 2</code></p>
 <p>2.margin只影响盒子的位置</p>
-<p>3.背景色会产生在内容区、内边距、边框上，而边框的颜色会覆盖在背景色上</p>
+<p>3.背景色会产生在内容区、内边距、边框上,而边框的颜色会覆盖在背景色上</p>
 
 #### 盒子内容
 | 组成名称                                                                | 组成描述               | 备注                                                                                                                                                                                                                                      |  
@@ -302,16 +302,16 @@
 | height                                                              | 高度                 | min-height max-height 二者不与height一起使用                                                                                                                                                                                                    |
 | 默认宽度                                                                | 宽度                 | 不设置宽度,盒子宽度 = 父容器宽度 - margin*2; <br>内容区宽度 = 盒子宽度 - (padding + border) * 2                                                                                                                                                                |
 | padding详述                                                           | 内边距                | 有四种属性 padding-left padding-top padding-right padding-bottom<br> 四种设置方式 <br>padding:x(设置四个方向) <br>padding:x y(设置上下、左右) <br>padding:x y z(设置上、左右、下) <br>padding:x y z e(上右、下左)                                                            |
-| border<p>border-left<p>border-top<p>border-right<p>border-bottom<p> | 边框类型               | 有三种属性 width color style  也可以单独设置，例如 border-left-color                                                                                                                                                                                   |
+| border<p>border-left<p>border-top<p>border-right<p>border-bottom<p> | 边框类型               | 有三种属性 width color style  也可以单独设置,例如 border-left-color                                                                                                                                                                                   |
 | margin详述                                                            | 外边框                | 有四个属性: margin-left margin-top margin-right margin-bottom<br>注意事项:<br>1.子元素的margin参考父元素的content进行计算<br>2.margin的设置值是为边框之外产生空白区域<br>3.块级元素、行内块元素支持四个方向的margin,行内元素仅支持左右方向的margin<br>4.margin的值可以设置为auto,若左右方向为auto,则元素居中<br>5.margin值可以为负 |
-| margin塌陷问题                                                          | 父元素、子元素            | 首个子元素设置margin-top值或末尾子元素设置margin-bottom值，导致margin值赋予父元素<br>解决方法:<br>1.父元素设置padding值<br>2.父元素设置border值<br>3.父元素设置css样式,overflow:hidden                                                                                                   |
+| margin塌陷问题                                                          | 父元素、子元素            | 首个子元素设置margin-top值或末尾子元素设置margin-bottom值,导致margin值赋予父元素<br>解决方法:<br>1.父元素设置padding值<br>2.父元素设置border值<br>3.父元素设置css样式,overflow:hidden                                                                                                   |
 | margin合并问题                                                          | 子元素、子元素            | 子元素之间相对的margin值进行设置,导致呈现的值为最大的margin值<br>解决方法:只为一个元素设置一个margin值即可                                                                                                                                                                       |
 | 内容溢出问题                                                              | 内容超过内容区的限定范围       | 使用 overflow ,可选值 hidden auto visible scroll<br>overflow-x overflow-y 仍在实验中,不推荐使用                                                                                                                                                        |
 | 隐藏元素的方式                                                             | 两种方式               | display:none 消除元素并清理占位、visibility:hidden(show) 消除元素但不清理占位                                                                                                                                                                               |
 | 行内元素、行内块元素之间的空白问题                                                   | 元素之间的空格会被设置为一个空白字符 | 设置父元素的font-size:0;将元素放在同一行(不推荐)                                                                                                                                                                                                         |
 | 行内块元素的幽灵空白问题                                                        | 行内块元素秉持基线对齐属性      | 设置行内块元素vertical-align不为baseline即可;display(不推荐)、父元素font-size方式(不推荐)                                                                                                                                                                      |
 <p>1.padding 不能为负值</p>
-<p>2.行内元素 不要设置上下边距，会引发显示冲突</p>
+<p>2.行内元素 不要设置上下边距,会引发显示冲突</p>
 <p>3.块级、行内块元素 四个方向可以顺利设置</p>
 <p style="color:#e15656">4.样式继承,继承文字样式,不继承盒子模型样式</p>
 <p style="color:#e15656">5.布局技巧: </p>
@@ -324,6 +324,26 @@
 <p>特点:</p>
 <p><code>1.脱离文档流</code></p>
 <p><code>2.浮动后宽高由内容撑开,可以设置</code></p>
-<p><code>3.不会独占一行，且可以与其他元素共用一行</code></p>
+<p><code>3.不会独占一行,且可以与其他元素共用一行</code></p>
 <p><code>4.不出现margin合并与塌陷问题</code></p>
 <p><code>5.不会被当作文本处理,即不出现行内空白问题</code></p>
+<p>浮动后的影响:</p>
+<p><code>1.对兄弟元素来说,会占据后面元素的位置且内容环绕在浮动元素的旁边;之前的兄弟元素不受到影响</code></p>
+<p><code>2.对父亲元素来说,父亲元素的高度无法撑开,但宽度可以束缚浮动元素</code></p>
+
+### 浮动解决方案
+
+| 序号  | 内容                                   | 缺陷           |
+|-----|--------------------------------------|--------------|
+| 1   | 父元素增加高度                              | 局限性大         |
+| 2   | 父元素浮动                                | 文字环绕,后续元素被覆盖 |
+| 3   | 父元素增加溢出隐藏                            | 后续元素消失       |
+| 4   | 新增一个子元素且设置clear:both                 | 编程不优         |
+| 5   | 父元素设置伪元素::after{内容为空;块元素;clear:both} | 最优           |
+<p style="color:#e15656">推荐,子元素全浮动或全不浮动</p>
+<p style="color:#e15656">浮动练习结果见chapter4下的5_flex</p>
+
+## 定位(direction)
+    
+
+    

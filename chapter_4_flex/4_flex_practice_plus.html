@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>解决浮动影响</title>
+    <style>
+        .outer{
+            background-color: rgba(236, 129, 236, 0.39);
+            /*border:1px solid black;*/
+        }
+        .outer::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .box{
+            width:100px;
+            height:100px;
+            background-color:aliceblue;
+            /*border:1px solid black;*/
+            margin:10px;
+            text-align:center;
+            line-height:100px;
+            float:left;
+        }
+        .logo,.banner2{
+            width:18%;
+        }
+        .banner1{
+            width:60%;
+        }
+        .menu{
+            height:50px;
+            width:99%;
+            margin:10px;
+            background-color:aliceblue;
+            text-align:center;
+            float:left;
+        }
+        .column{
+            width:200px;
+            height:200px;
+            border:1px solid black;
+            margin:10px;
+            float:left;
+            text-align:center;
+            line-height:80px;
+        }
+        .columnContainer{
+            width:1450px;
+        }
+        .columnContainer::after{
+            content:'';
+            display:inline-block;
+            clear:both;
+        }
+        .column1,.column2{
+            width:700px;
+            height:300px;
+        }
+        .column3,.column4,.column5,.column6{
+            width:339px;
+            height:300px;
+        }
+        .column7,.column8,.column9{
+            width:100px;
+            height:100px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="box logo">logo</div>
+    <div class="box banner1">banner1</div>
+    <div class="box banner2">banner2</div>
+    <div class="menu">menu</div>
+    <div class="columnContainer">
+        <div class="column column1">专栏一</div>
+        <div class="column column2">专栏二</div>
+        <div class="column column3">专栏三</div>
+        <div class="column column4">专栏四</div>
+        <div class="column column5">专栏五</div>
+        <div class="column column6">专栏六</div>
+    </div>
+
+    <div class="column column7">专栏七</div>
+    <div class="column column8">专栏八</div>
+    <div class="column column9">专栏九</div>
+</div>
+</body>
+</html>
