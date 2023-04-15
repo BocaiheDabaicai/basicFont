@@ -344,6 +344,25 @@
 <p style="color:#e15656">浮动练习结果见chapter4下的5_flex</p>
 
 ## 定位(direction)
+<h3>相对定位</h3>
+<p>设置:position:relative</p>
+<p>四个属性 left top right bottom</p>
+<p>参考点:元素最初出现的位置</p>
+<p>特点:</p>
+<p><code>1.不脱离文档流</code></p>
+<p><code>2.显示层级比普通元素高</code></p>
+<p><code>3.相对位置不能一起设置</code></p>
+<p><code>4.可以进行浮动、设置外边距(不推荐)</code></p>
+<h3>绝对定位</h3>
+<p>设置:position:absolute</p>
+<p>四个属性 left top right bottom</p>
+<p>参考点:包含块的位置,未设置则使用页面的左上角;设置父元素position:relative,则以父元素的左上角为初始点</p>
+<p>特点:</p>
+<p><code>1.脱离文档流</code></p>
+<p><code>2.相对位置不能一起设置</code></p>
+<p><code>3.绝对定位与浮动不能同时开启,若开启浮动,则浮动无效</code></p>
+<p><code>4.设置该属性会使元素成为定位元素,内容撑开宽高,且可自由设定</code></p>
+<p><code>5.能够通过margin调整位置(不推荐)</code></p>
     
 
     

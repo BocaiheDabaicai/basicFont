@@ -9,6 +9,7 @@
             background-color:aliceblue;
             border:1px solid black;
             padding:20px;
+            position:relative;
         }
         .box{
             width:200px;
@@ -19,10 +20,15 @@
         }
         .box2{
             background-color:cornflowerblue;
-            
+            position:absolute;
+            top:220px;
+            left:20px;
         }
         .box3{
             background-color:lightskyblue;
+        }
+        .outer:hover .box2{
+            left:220px;
         }
     </style>
 </head>
