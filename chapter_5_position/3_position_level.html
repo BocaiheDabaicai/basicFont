@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位的层级</title>
+    <style>
+        .outer{
+            width:500px;
+            background-color:aliceblue;
+            border:1px solid black;
+            padding:20px;
+            position:relative;
+        }
+        .box{
+            width:200px;
+            height:200px;
+        }
+        .box1{
+            background-color:cadetblue;
+        }
+        .box2{
+            background-color:cornflowerblue;
+            position:relative;
+            top:-150px;
+            left:50px;
+            z-index:0;
+        }
+        .box3{
+            background-color:lightskyblue;
+            position:absolute;
+            left:130px;
+            top:130px;
+            z-index:0;
+        }
+        .box4{
+            background-color:deepskyblue;
+            position:fixed;
+            left:200px;
+            top:200px;
+            z-index:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+</html>
