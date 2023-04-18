@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位的应用</title>
+    <style>
+        .outer{
+            height:500px;
+            background-color:aliceblue;
+            position:relative;
+        }
+        .inner{
+            background-color:cadetblue;
+            font-size:24px;
+            padding:20px;
+            border:10px solid wheat;
+            position:absolute;
+            right:0; /* 离右边框的距离为0 */
+            left:0;
+            top:0;
+            bottom:0;
+        }
+        .outer2{
+            width:800px;
+            height:400px;
+            background-color:aliceblue;
+            position:relative;
+        }
+        .inner2{
+            width:400px;
+            height:100px;
+            background-color:orange;
+            font-size:24px;
+            position:absolute;
+            /* 居中方法一 */
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin:auto;
+            /* 居中方法二 */
+            /*left:50%;*/
+            /*top:50%;*/
+            /*margin-left:-200px;*/
+            /*margin-top:-50px;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">box1</div>
+    </div>
+    <hr>
+    <div class="outer2">
+        <div class="inner2">box1</div>
+    </div>
+</body>
+</html>
