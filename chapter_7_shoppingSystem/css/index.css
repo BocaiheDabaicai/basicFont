@@ -38,6 +38,14 @@ ul{
     margin:0;
     padding:0;
 }
+dt,dd{
+    margin:0;
+    display:inline-block;
+}
+.code{
+    width: 239px;
+    height: 190px;
+}
 /* 预设值 */
 
 /* 版心 */
@@ -96,7 +104,7 @@ ul{
 /* 头部区 Start */
 .header{
     height:120px;
-    background-color:palevioletred;
+    /*background-color:palevioletred;*/
 }
 .logo .picture{
     width:190px;
@@ -159,3 +167,211 @@ ul{
     font-size:16px;
 }
 /* 主导航区 End */
+
+/* 主内容区 Start */
+.mainContent{
+    margin-top:10px;
+}
+.mainContent .slideNavigator{
+    width:190px;
+    height:458px;
+    background-color:#f4f4f4;
+    position:relative;
+}
+.mainContent .slideNavigator li{
+    font-size:14px;
+    height:28px;
+    line-height:28px;
+    padding-left:16px;
+}
+.mainContent .slideNavigator li:hover{
+    background-color:#DD302D;
+}.mainContent .slideNavigator li:hover .secondMenu{
+    display:block;
+ }
+
+.mainContent .slideNavigator li > a:hover{
+    color:white;
+}
+.mainContent .slideNavigator li .secondMenu{
+    width:680px;
+    height:458px;
+    background-color:white;
+    position:absolute;
+    top:0;
+    left:190px;
+    padding-left:20px;
+    display:none
+}
+.secondMenu dl{
+    height:36px;
+    line-height:36px;
+}
+.secondMenu dl:first-child{
+    margin-top:10px;
+}
+.secondMenu dt{
+    float:left;
+    width:70px;
+    font-weight:bold;
+    margin-right:10px;
+}
+.secondMenu dd{
+    float:left;
+}
+.secondMenu dd a{
+    padding:0 10px;
+    border-left:1px solid #666666;
+}
+
+.mainContent .rotograph{
+    width:690px;
+    height:458px;
+    /*background-color: #799ab6;*/
+    background-image:url("../images/slider.png");
+    background-repeat:no-repeat;
+    margin:0 10px;
+}
+
+.mainContent .rightContent{
+    width:290px;
+    height:458px;
+    /*background-color: #1974c4;*/
+}
+.mainContent .message{
+    width:260px;
+    height:156px;
+    border:1px solid #d9d9d9;
+    padding:0 14px;
+}
+.mainContent .message .title{
+    height:38px;
+    line-height:38px;
+    border-bottom:1px solid #d9d9d9;
+}
+.mainContent .message .title span{
+    font-size:14px;
+}
+.mainContent .message .title a{
+    font-size:12px;
+}
+.mainContent .message .msgList{
+    height:26px;
+    line-height:26px;
+}
+
+.mainContent .iconNavigator{
+    width:290px;
+    height:290px;
+    /*background-color:aliceblue;*/
+    margin-top:10px;
+    overflow:hidden;
+}
+.mainContent .iconNavigator .other-nav-list li{
+    height:70px;
+    width:48px;
+    /*background-color:orange;*/
+    float:left;
+    margin:0 11px;
+    text-align:center;
+    font-size:14px;
+    cursor:pointer;
+}
+.mainContent .iconNavigator .other-nav-list:first-child{
+    margin-top:16px;
+}
+.mainContent .iconNavigator .other-nav-list:nth-child(2){
+    margin:17px 0;
+}
+.mainContent .iconNavigator .other-nav-list li:first-child{
+    margin-left:16px;
+}
+.mainContent .iconNavigator .other-nav-list li div{
+    margin-bottom:10px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture1{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/话费.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture2{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/火车票.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture3{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/加油卡.png");
+    background-size:48px 48px;
+
+}
+.mainContent .iconNavigator .other-nav-list li .picture4{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/白条.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture5{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/电影票iocn.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture6{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/_酒店.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture7{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/理财.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture8{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/旅行.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture9{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/礼品卡.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture10{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/彩票.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture11{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/游戏，游戏机.png");
+    background-size:48px 48px;
+}
+.mainContent .iconNavigator .other-nav-list li .picture12{
+    width:48px;
+    height:48px;
+    background-image:url("../images/icon/京东众筹.png");
+    background-size:48px 48px;
+}
+
+.seckill{
+    margin-top:10px;
+}
+.seckill img{
+    float:left;
+    margin-right:11px;
+    cursor:pointer;
+}
+.seckill img:last-child{
+    margin-right:0;
+}
+/* 主内容区 Start */
