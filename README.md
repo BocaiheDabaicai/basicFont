@@ -1,5 +1,6 @@
 ### 自己的学习内容
-<text style="color:blue">html、html5、css、css3</text> --2023.03.23
+<text style="color:tomato">html、css</text> --2023.04.21 完结  
+<text style="color:tomato">html、html5、css、css3</text> --2023.03.23  开始
 #### 元素标签
 1.标签不必在意显示效果,注重标签含义  
 2.块级元素独占一行,可内嵌块级元素、行内元素,&lt;p&gt;、&lt;h1&gt;~&lt;h6&gt;、&lt;dt&gt;之间不相互嵌套  
