@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>语义化标签</title>
+    <style>
+        progress{
+            /*width:60px;*/
+        }
+    </style>
 </head>
 <body>
+<!-- 语义化标签 -->
+<div>
     <header>
         <h1>优谷谷</h1>
     </header>
@@ -42,5 +49,40 @@
     <footer>
         <h3>欢迎下次光临!</h3>
     </footer>
+</div>
+<!-- 状态标签   -->
+<div>
+    <span>手机电量:</span>
+    <meter max="100" min="0" value="7" low="10" high="30" optimum="100"></meter>
+    <br>
+    <span>当前进度:</span>
+    <progress max="100" value="24"></progress>
+    <hr>
+</div>
+<!-- 列表标签   -->
+<div>
+    <form action="#">
+        <input type="text" list="mydata">
+        <button>搜索</button>
+    </form>
+    <datalist id="mydata">
+        <option value="五月天">五月天</option>
+        <option value="伍佰">伍佰</option>
+        <option value="武神">武神</option>
+        <option value="武艺">武艺</option>
+    </datalist>
+    <details>
+        <summary>1234</summary>
+        <p>ll43214sk2dk2fsl2dk21f</p>
+    </details>
+    <hr>
+</div>
+<!-- 文本标签   -->
+<div>
+    <ruby>
+        <span>使用Markdown与使用Word类编辑器不同。</span>
+        <rt>shi yong Markdown yu shi yong  Word lei bian ji qi bu tong 。</rt>
+    </ruby>
+</div>
 </body>
 </html>
