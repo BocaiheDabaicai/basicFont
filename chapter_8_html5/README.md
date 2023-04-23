@@ -99,3 +99,4 @@ details标签
 #### audio属性
 与video相同
 缺少 width,height,poster
+#### 全局属性 作用极小 略
