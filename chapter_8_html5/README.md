@@ -53,3 +53,49 @@ details标签
 用法:
 1. 设置<code>details</code>
 2. 在details里设置summary作为显示标题,后续内容自行设定
+
+#### 文本标签
+定义:为文本添加一些特殊功能
+内容:
+1. 文本注音,`ruby`标签 包裹注音文字,`rt`标签写拼音  
+2. 文本标记,`mark`标签 标注重要内容,显示黄色背景
+#### 表单input属性
+| 属性名          | 语义                            |
+|--------------|-------------------------------|
+| placeholder  | 提示文字                          |
+| required     | 必填内容,适用于除按钮外的表单控件             |
+| autofocus    | 自动获取焦点,适用于所有的表单控件             |
+| autocomplete | 自动完成,可以设置为on或off,适用于文字输入类表单控件 |
+| pattern      | 输入规则,填入正则表达式,与`required`配合使用  |
+#### input类型
+| 属性名            | 语义              |
+|----------------|-----------------|
+| email          | 邮件              |
+| url            | 网址              |
+| number         | 数字              |
+| search         | 搜索              |
+| tel            | 电话号码,移动端唤起数字输入框 |
+| range          | 范围              |
+| color          | 颜色              |
+| date           | 日期              |
+| month          | 年份 月份           |
+| week           | 年份 周数           |
+| time           | 时间              |
+| datetime-local | 日期 时间           |
+| ---表单新增属性---   | ------          |
+| novalidate     | 使表单不进行验证        |
+#### video标签属性
+| 属性名      | 语义                                                |
+|----------|---------------------------------------------------|
+| width    | 宽度                                                |
+| height   | 高度                                                |
+| src      | 视频地址                                              |
+| controls | 展示视频控件                                            |
+| muted    | 静音                                                |
+| autoplay | 自动播放                                              |
+| loop     | 循环播放                                              |
+| poster   | 视频封面                                              |
+| preload  | 预加载,可选值`auto,metaplay,none`<br>metaplay指的是预先加载元数据 |
+#### audio属性
+与video相同
+缺少 width,height,poster
