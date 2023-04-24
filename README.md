@@ -1,4 +1,5 @@
 ### 自己的学习内容
+<text style="color:tomato">html5</text> --2023.04.24 完结  
 <text style="color:tomato">html、css</text> --2023.04.21 完结  
 <text style="color:tomato">html、html5、css、css3</text> --2023.03.23  开始
 #### 元素标签
@@ -161,6 +162,9 @@
 <p>3.类选择器<code>.类名</code> 根据class的名称,来选中对应元素</p>  
 <u>对于标签来说,要使用多个类名对应的CSS样式,书写如下：</u>
 <u>&lt;p class="类名1 类名2" &gt;</u>  
+
+#### CSS3的内容 Start 
+
 <p>4.id选择器<code>.id名</code> 根据id的名称,来选中对应元素,其余内容同class</p>  
 <p>5.交集选择器<code>(标签名.类名)|(.类名1.类名2)</code> 标签名只能有一个,类名可有多个</p>  
 <p>6.并集选择器<code>(标签名 , .类名)|(.类名1 , .类名2)</code> 可用标签名、ID名、类名,无数量限制</p>  
@@ -174,6 +178,8 @@
 <code>(x,y,z)<=>(ID选择器,类、伪类、属性选择器,元素、伪元素选择器)</code>  
 <code>样式权重高,则优先显示；权重相同,后者覆盖</code>  
 
+#### CSS3的内容 End
+
 ### <em>css三大特性</em>
 <blockquote>
 <p>1.层叠性,样式发生冲突(同样的名称,被设置不同的值),会根据一定的规则进行覆盖</p>
@@ -185,9 +191,9 @@
 <p>1.像素,精细表达网页内容的单位名称</p>  
 <p>2.表达方式</p>  
 <p>----(1)官方指定名称_mdn_named_color</p>    
-<p>----(2)rgb与rgba,rgb调整红绿蓝三种光色,a调整透明性[1不透明、0完全透明]</p>    
+<p>----(2)rgb与<code>rgba(css3)</code>,rgb调整红绿蓝三种光色,a调整透明性[1不透明、0完全透明]</p>    
 <p>----(3)hex与hexa,hex调整红绿蓝三种光色,#0bc3e6 每两位代表一种颜色(十六进制),末尾再添加两位代表透明度</p>    
-<p>----(4)hsl与hsla,hsl代表色相度,饱和度,亮度,hsl(x,y,z) 色相盘、百分比、百分比组成,<u style="color:red">很少使用</u></p>    
+<p>----(4)<code>hsl(css3)</code>与<code>hsla(css3)</code>,hsl代表色相度,饱和度,亮度,hsl(x,y,z) 色相盘、百分比、百分比组成,<u style="color:red">很少使用</u></p>    
 <p>----(5)Ui设计师提供的设计稿</p>  
 
 ### 字体

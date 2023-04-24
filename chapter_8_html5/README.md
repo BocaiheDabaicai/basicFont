@@ -100,3 +100,15 @@ details标签
 与video相同
 缺少 width,height,poster
 #### 全局属性 作用极小 略
+#### 解决兼容性问题
+
+-  添加元信息,使浏览器处于最优渲染模式  
+`<meta http-equiv="X-UA-Compatible" content="IE=Edge">`
+- 优先使用webkit(chromium)内核进行渲染,适用国产浏览器  
+`<meta name="renderer" content="webkit">`
+- 使用html5shiv.js让低版本浏览器认识h5的语义化标签
+```html
+<!--[if lt ie 9]>
+<script src="路径/html5shiv.js"></script>
+<![endif]-->
+```
