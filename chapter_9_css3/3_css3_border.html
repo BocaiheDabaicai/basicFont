@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3边框</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            /*background-color: lightskyblue;*/
+            background:lightskyblue url("../images/flower.png") no-repeat 0 0/cover;
+            border:2px solid violet;
+            margin:0 auto;
+
+            /*border-radius:200px;*/
+            border-radius:100%;
+
+            /*border-top-left-radius: 100px;*/
+            /*border-top-right-radius: 100px;*/
+            /*border-bottom-left-radius: 100px;*/
+            /*border-bottom-right-radius: 10px;*/
+
+            /*border-top-left-radius: 100px 50px;*/
+            /*border-top-right-radius: 100px 50px;*/
+            /*border-bottom-left-radius: 100px 50px;*/
+            /*border-bottom-right-radius: 10px 50px;*/
+
+            /*border-radius:100px 100px 10px 100px / 50px 50px 50px 50px;*/
+
+        }
+        .box2{
+            width:400px;
+            height:400px;
+            background-color:cadetblue;
+            margin:0 auto;
+            padding:10px;
+            border:10px solid violet;
+
+            /*outline-width:10px;*/
+            /*outline-color:palevioletred;*/
+            /*outline-style:solid;*/
+            outline-offset:5px;
+            outline:10px solid palevioletred;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<hr>
+<div class="box2"></div>
+</body>
+</html>
