@@ -207,3 +207,24 @@ text-overflow:clip|ellipsis;
 > -webkit-text-stroke-color : 设置描边颜色
 > 
 > -webkit-text-stroke : width color
+
+### 渐变
+
+#### 线性渐变
+
+`background-image:linear-gradient([to 方向值],颜色1 [渐变宽值],颜色2 [],颜色3 [],...)`
+
+示例:
+
+```css
+/* 默认方向，从上至下 */
+background-image:linear-gradient(red,yellow,green);
+/* 改变方向，从左至右 */
+background-image:linear-gradient(to right top,red,yellow,green);
+/* 设置渐变角度 */
+background-image:linear-gradient(0deg,red,yellow,green);
+/* 设置渐变宽度 */
+background-image:linear-gradient(red 50px,yellow 100px,green 150px);
+/* 设置方向，且渐变宽度 */
+background-image:linear-gradient(20deg,red 50px,yellow 100px,green 150px);
+```
