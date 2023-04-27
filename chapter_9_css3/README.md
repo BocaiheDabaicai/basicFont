@@ -228,3 +228,104 @@ background-image:linear-gradient(red 50px,yellow 100px,green 150px);
 /* 设置方向，且渐变宽度 */
 background-image:linear-gradient(20deg,red 50px,yellow 100px,green 150px);
 ```
+
+#### 径向渐变
+
+background-image:radial-gradient([像素值 像素值 at 像素值 像素值 ]，颜色1 [像素值]，颜色2，...)
+
+示例:
+
+```css
+/* 默认设置，颜色由内到外 */
+background-image:radial-gradient(red,yellow,green)  
+/* 位置设置，颜色由内到外 */      
+background-image:radial-gradient(at left top,red,yellow,green)   
+/* 像素设置位置，颜色由内到外 */     
+background-image:radial-gradient(at 50px 100px,red,yellow,green);
+/* 关键词设置位置，颜色由内到外 */
+background-image:radial-gradient(circle,red,yellow,green);
+/* 圆的a,b轴设置，颜色由内到外 */
+background-image:radial-gradient(100px 100px,red,yellow,green);
+/* 默认设置，颜色由像素值进行分布 */
+background-image:radial-gradient(red 50px,yellow 100px,green 150px);
+/* 综合设置，颜色由像素值进行分布 */
+background-image:radial-gradient(100px 50px at 150px 150px,red 50px,yellow 100px,green 150px);
+```
+
+#### 重复渐变
+
+在前面两种属性前加上`-repeating-`即可
+
+> 实现机理:使颜色`渐变区块`重复出现在指定内容区中
+
+实例:
+
+```css
+width:300px;
+height:300px;
+border-radius:50%;
+background-image:radial-gradient(at 100px 100px,whitesmoke,purple);
+border:0;
+```
+
+示例图:
+
+![图片](C:\Users\NfryCreator\Desktop\gate\fontLearn\chapter_9_css3\6_css3_simple.png)
+
+### web字体
+
+```css
+@font-face{
+    font-family:"名称",
+    src:url("连接地址") /* 网络地址、本地地址均可 */
+}
+h1{
+    font-family:"对应设置的名称";
+}
+```
+
+#### 字体图标
+
+```textile
+目前提供的是使用阿里的图标库,
+介绍了
+1. 本地引用
+    (1)原生引入
+    (2)link引入(最优)
+    (3)js引入
+2. 在线引入
+    (1)src引入
+    (2)scrip引入(最简洁)
+```
+
+地址在这里:[iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/ "你会看到很多有趣的图标")
+
+### 2D变换
+
+#### 位移变换
+
+内容:使元素相对于自身发生移动。
+
+使用:`transform:[定位属性]`
+
+定位属性如下：
+
+1. translateX(像素值||百分比)
+
+2. translateY(像素值||百分比)
+
+3. translate(像素值,像素值) `前者左右移动，后者上下移动` 
+
+> 注意点:
+> 
+> 1. 不脱离文档流
+> 
+> 2. 定位参考其自身
+> 
+> 3. 位移比定位使用在浏览器上效率更好
+> 
+> 4. 可以链式编写
+> 
+> 5. **对行内元素无效**
+> 
+> 6. 位移可以配合定位实现块元素居中

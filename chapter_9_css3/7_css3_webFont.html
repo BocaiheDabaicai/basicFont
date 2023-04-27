@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web字体</title>
+    <!--   方案二，兼容性次之,使用最优   -->
+    <link rel="stylesheet" href="./icon/iconfont.css">
+    <!--   方案三，兼容性最弱，但显示效果最好   -->
+<!--    <script src="./icon/iconfont.js"></script>-->
+    <style>
+        @font-face{
+            font-family:"ruaruaFont";
+            src:url("./font/NiShiWoDeKeAiBaoBei-2.ttf");
+        }
+        @font-face{
+            font-family:"dicidici";
+            src:url("./font/AXi-NiHaoXingQiSi-2.ttf");
+        }
+        .selfDefine {
+            font-family:"ruaruaFont",sans-serif;
+        }
+        .selfIcon{
+            font-family:"dicidici",sans-serif;
+        }
+        /* 方案一，兼容性最好 */
+        /*@font-face {*/
+        /*    font-family: 'iconfont';*/
+        /*    src: url('./icon/iconfont.ttf?t=1682571580860') format('truetype');*/
+        /*}*/
+        .iconfont {
+            font-family: "iconfont",sans-serif !important;
+            font-size: 128px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* 方案三，兼容性最弱，但显示效果最好 */
+        /*.icon {*/
+        /*    width: 8em;*/
+        /*    height: 8em;*/
+        /*    vertical-align: -0.15em;*/
+        /*    fill: currentColor;*/
+        /*    overflow: hidden;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <h1 class="selfDefine">落下月半人，残影空余心</h1>
+    <h1 class="selfDefine">肃穆河州峬，袅袅一莲音</h1>
+    <h1 class="selfIcon">qqweqwe</h1>
+    <h1 class="selfIcon">1234656</h1>
+<!--    <span class="iconfont">&#xe65f;</span>-->
+<!--    <span class="iconfont">&#xe60a;</span>-->
+<!--    <span class="iconfont">&#xe6c5;</span>-->
+<!--    <span class="iconfont">&#xe646;</span>-->
+<!--    <span class="iconfont">&#xe629;</span>-->
+
+    <span class="iconfont icon-dangao"></span>
+    <span class="iconfont icon-dangao1"></span>
+    <span class="iconfont icon-dangao2"></span>
+    <span class="iconfont icon-dangao3"></span>
+    <span class="iconfont icon-dangao4"></span>
+
+<!--    <svg class="icon" aria-hidden="true">-->
+<!--        <use xlink:href="#icon-dangao"></use>-->
+<!--    </svg>-->
+<!--    <svg class="icon" aria-hidden="true">-->
+<!--        <use xlink:href="#icon-dangao1"></use>-->
+<!--    </svg>-->
+<!--    <svg class="icon" aria-hidden="true">-->
+<!--        <use xlink:href="#icon-dangao2"></use>-->
+<!--    </svg>-->
+<!--    <svg class="icon" aria-hidden="true">-->
+<!--        <use xlink:href="#icon-dangao3"></use>-->
+<!--    </svg>-->
+<!--    <svg class="icon" aria-hidden="true">-->
+<!--        <use xlink:href="#icon-dangao4"></use>-->
+<!--    </svg>-->
+</body>
+</html>
