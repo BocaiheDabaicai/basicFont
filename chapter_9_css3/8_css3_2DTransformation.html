@@ -28,15 +28,92 @@
             left: 50%;
             transform: translate(-50%,-50%) ;
         }
+
+        .inner3 {
+            width: 200px;
+            height: 200px;
+            background: darkslateblue;
+            /* 方式一 */
+            /*transform:scaleX(0.75);*/
+            /*transform:scaleY(0.75);*/
+            /* 方式二 */
+            transform:scale(0.75,0.75);
+        }
+        .font{
+            text-align: center;
+            margin-top:10px;
+            font-size:20px;
+            transform:scale(0.5);
+        }
+        .inner4 {
+            width: 200px;
+            height: 200px;
+            background: darkslateblue;
+            transform:rotateZ(30deg);
+        }
+        .inner5 {
+            width: 200px;
+            height: 200px;
+            background: palevioletred;
+            transform:skew(30deg,30deg);
+        }
+        .inner6 {
+            width: 200px;
+            height: 200px;
+            background: whitesmoke;
+            transform:translate(50px,50px) rotateZ(60deg)  scale(0.75,0.75) ;
+        }
+        .inner7 {
+            width: 200px;
+            height: 200px;
+            background-image:linear-gradient(whitesmoke 50px,pink 170px);
+            /* 方式一 关键词 */
+            /*transform-origin:left top;*/
+            /* 方式二 像素值 */
+            /*transform-origin:50px 50px;*/
+            /* 方式三 百分比 */
+            /*transform-origin:25% 25%;*/
+            /* 方式四 单值 */
+            transform-origin:bottom left;
+            transform:translate(50px,0px);
+            /*transform:scale(0.5,0.5);*/
+            /*transform:rotateZ(30deg);*/
+        }
     </style>
 </head>
 <body>
 <div class="outer">
-    <div class="inner1">qqwqq</div>
+    <div class="inner1">位移</div>
 </div>
 <hr>
 <div class="outer">
-    <div class="inner2">qqwqq</div>
+    <div class="inner2">位移(居中)</div>
+</div>
+<hr>
+<div class="outer">
+    <div class="inner3">缩放</div>
+    <div class="font">字体大小 20px -> 10px</div>
+</div>
+<br>
+<br>
+<hr>
+<div class="outer">
+    <div class="inner4">旋转</div>
+</div>
+<br>
+<hr>
+<div class="outer">
+    <div class="inner5">扭曲(了解)</div>
+</div>
+<br>
+<hr>
+<div class="outer">
+    <div class="inner6">多重变换</div>
+</div>
+<br>
+<hr>
+<div class="outer">
+    <div class="inner7">多重变换</div>
 </div>
 </body>
 </html>
