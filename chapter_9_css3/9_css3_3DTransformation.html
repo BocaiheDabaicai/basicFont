@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D变换</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 10px auto 0;
+            position: relative;
+            /* 开启3D空间 */
+            transform-style:preserve-3d;
+            /* 设置景深 */
+            perspective:500px;
+        }
+
+        .inner1 {
+            width: 200px;
+            height: 200px;
+            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
+            transform:rotateX(60deg);
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner1">3D空间</div>
+</div>
+</body>
+</html>

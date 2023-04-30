@@ -399,3 +399,23 @@ h1{
 > 1. 默认原点X、Y轴居中
 > 
 > 2. 对位移无效
+
+---
+
+## 3D变换
+
+### 开启与设置
+
+内容:
+
+1. 父元素要开启3D空间
+
+```css
+transform-style:preserve-3d; //default is flat(2D)
+```
+
+2. 为父元素设置景深，Z轴平面与观察者之间的距离
+
+```css
+perspective:500px;// defalut is none,一般要指定长度值,不能为负值
+```
