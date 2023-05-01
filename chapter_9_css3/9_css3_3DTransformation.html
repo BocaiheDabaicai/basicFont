@@ -4,84 +4,70 @@
     <meta charset="UTF-8">
     <title>3D变换</title>
     <style>
-        .outer {
-            width: 200px;
-            height: 200px;
-            border: 2px solid black;
-            margin: 10px auto 0;
-            position: relative;
-            /* 开启3D空间 */
-            transform-style:preserve-3d;
-            /* 设置景深 */
-            perspective:500px;
-            /* 设置透视点位置 */
-            /*perspective-origin: 20px 102px;*/
+        .outer{
+            width:400px;
+            height:200px;
+            overflow: hidden;
+        }
+        .outer:hover .inner{
+            box-shadow:0 0 200px 70px black inset;
+            transform:scale(1.9,1.9) rotate(30deg);
+            font-size:24px;
+        }
+        .inner{
+            width:400px;
+            height:200px;
+            background-image: url("../images/picture.png") ;
+            background-size:cover;
+            text-align:center;
+            line-height:200px;
+            font-size:0;
+            color:whitesmoke;
+            transition:2s all 0.27s ease;
         }
 
-        .inner1 {
-            width: 200px;
-            height: 200px;
-            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
-            transform:rotateX(60deg);
+        .out{
+            width:400px;
+            height:225px;
+            position:relative;
+            overflow:hidden;
         }
-
-        .inner2 {
-            width: 200px;
-            height: 200px;
-            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
-            transform:rotateX(45deg);
+        img{
+            width:400px;
+            height:225px;
+            transition: 1.3s all 0s ease;
         }
-        .inner3 {
-            width: 200px;
-            height: 200px;
-            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
-            transform:translate3d(20px,20px,20px);
+        .in{
+            width:400px;
+            height:225px;
+            background-color:black;
+            color:white;
+            position: absolute;
+            left:0;
+            top:0;
+            text-align:center;
+            line-height: 225px;
+            font-size:64px;
+            opacity:0;
+            transition: 1.3s all 0s ease;
+            cursor:pointer;
         }
-        .inner4 {
-            width: 200px;
-            height: 200px;
-            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
-            transform:rotate3d(1,2,3,60deg);
+        .out:hover .in{
+            opacity:0.5;
         }
-        .inner5 {
-            width: 200px;
-            height: 200px;
-            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
-            transform:scaleZ(2) rotateY(30deg);
-        }
-        .inner6 {
-            width: 200px;
-            height: 200px;
-            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
-            transform-origin:left;
-            transform:translateZ(100px) scaleZ(1.2) rotateY(40deg);
+        .out:hover img{
+            transform:scale(1.9,1.9) rotate(30deg);
         }
     </style>
 </head>
 <body>
-<div class="outer">
-    <div class="inner1">3D空间</div>
-</div>
+    <div class="outer">
+        <div class="inner">艾薇利特</div>
+    </div>
 <hr>
-<div class="outer">
-    <div class="inner2">透视点</div>
-</div>
-<hr>
-<div class="outer">
-    <div class="inner3">3D位移</div>
-</div>
-<hr>
-<div class="outer">
-    <div class="inner4">3D旋转</div>
-</div>
-<hr>
-<div class="outer">
-    <div class="inner5">3D缩放</div>
-</div>
-<hr>
-<div class="outer">
-    <div class="inner6">多重变换</div>
-</div>
-<hr>
+    <div class="out">
+        <img src="../images/picture.png" alt="violet">
+        <div class="in">艾薇利特</div>
+    </div>
 </body>
 </html>
