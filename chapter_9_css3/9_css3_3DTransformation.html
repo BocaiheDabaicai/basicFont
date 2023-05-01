@@ -14,6 +14,8 @@
             transform-style:preserve-3d;
             /* 设置景深 */
             perspective:500px;
+            /* 设置透视点位置 */
+            /*perspective-origin: 20px 102px;*/
         }
 
         .inner1 {
@@ -22,11 +24,64 @@
             background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
             transform:rotateX(60deg);
         }
+
+        .inner2 {
+            width: 200px;
+            height: 200px;
+            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
+            transform:rotateX(45deg);
+        }
+        .inner3 {
+            width: 200px;
+            height: 200px;
+            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
+            transform:translate3d(20px,20px,20px);
+        }
+        .inner4 {
+            width: 200px;
+            height: 200px;
+            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
+            transform:rotate3d(1,2,3,60deg);
+        }
+        .inner5 {
+            width: 200px;
+            height: 200px;
+            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
+            transform:scaleZ(2) rotateY(30deg);
+        }
+        .inner6 {
+            width: 200px;
+            height: 200px;
+            background-image:linear-gradient(whitesmoke 50px,gray 100px,black);
+            transform-origin:left;
+            transform:translateZ(100px) scaleZ(1.2) rotateY(40deg);
+        }
     </style>
 </head>
 <body>
 <div class="outer">
     <div class="inner1">3D空间</div>
 </div>
+<hr>
+<div class="outer">
+    <div class="inner2">透视点</div>
+</div>
+<hr>
+<div class="outer">
+    <div class="inner3">3D位移</div>
+</div>
+<hr>
+<div class="outer">
+    <div class="inner4">3D旋转</div>
+</div>
+<hr>
+<div class="outer">
+    <div class="inner5">3D缩放</div>
+</div>
+<hr>
+<div class="outer">
+    <div class="inner6">多重变换</div>
+</div>
+<hr>
 </body>
 </html>

@@ -419,3 +419,44 @@ transform-style:preserve-3d; //default is flat(2D)
 ```css
 perspective:500px;// defalut is none,一般要指定长度值,不能为负值
 ```
+
+### 透视点位置
+
+内容:设置观察者观看3d图像的位置，默认为父元素中心点，**一般不作修改**
+
+```css
+perspective-origin:像素值 像素值;
+```
+
+### 3D位移
+
+内容:使元素沿着Z轴移动
+
+```css
+transform:translateZ(0px);    /* 不能使用百分比 */
+transform:translate(0px 0px 0px);    /* 三轴移动 */
+```
+
+### 3D旋转
+
+内容:设置坐标点，进行旋转
+
+```css
+transform:rotate3d(x,y,z,60deg);    /* 坐标点、旋转轴 */
+```
+
+### 3D缩放
+
+内容:使元素沿着Z轴缩放
+
+```css
+transform:scaleZ(数字);    /* 需要配着 rotate 进行使用，实际显示只是在改变景深值 */
+```
+
+### 多重变换
+
+内容:组合使用
+
+```css
+transform:translateZ(100px) scaleZ(1.2) rotateY(40deg);    /*  */
+```
