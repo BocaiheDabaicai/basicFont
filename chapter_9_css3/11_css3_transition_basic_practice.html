@@ -2,129 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>过渡</title>
+    <title>过渡练习</title>
     <style>
-        .box1 {
-            width: 200px;
-            height: 200px;
-            border: 1px solid mistyrose;
-            /*background-image:linear-gradient(white,whitesmoke,antiquewhite);*/
-            background-color: whitesmoke;
-            color: pink;
-            font-family: "有爱魔兽圆体 CN Medium", "sans-serif";
-            /* 设置过渡效果属性 */
-            transition-property: all;
-            /* 设置过渡时间 */
-            transition-duration: 1s;
+        .outer{
+            width:400px;
+            height:200px;
+            overflow: hidden;
+        }
+        .outer:hover .inner{
+            box-shadow:0 0 200px 70px black inset;
+            transform:scale(1.9,1.9) rotate(30deg);
+            font-size:24px;
+        }
+        .inner{
+            width:400px;
+            height:200px;
+            background-image: url("../images/picture.png") ;
+            background-size:cover;
+            text-align:center;
+            line-height:200px;
+            font-size:0;
+            color:whitesmoke;
+            transition:2s all 0.27s ease;
         }
 
-        .box1:hover {
-            height: 300px;
-            width: 300px;
-            font-size: 64px;
-            background-color: gray;
-            transform: rotate(60deg);
-            box-shadow: 0 0 10px 10px violet;
+        .out{
+            width:400px;
+            height:225px;
+            position:relative;
+            overflow:hidden;
         }
-
-        .outer {
-            width: 1300px;
-            height: 900px;
-            border: 1px solid gray;
-        }
-
-        .outer:hover .box {
-            width: 1300px;
-        }
-
-        .box {
-            width: 200px;
-            height: 100px;
-            background: navajowhite;
-            transition-property: all;
-            transition-duration: 5s;
-            /* 过渡延迟 */
-            /*transition-delay:2s;*/
-        }
-
-        .box2 {
-            background: pink;
-            transition-timing-function: ease;
-        }
-
-        .box3 {
-            background: wheat;
-            transition-timing-function: linear;
-        }
-
-        .box4 {
-            background: floralwhite;
-            transition-timing-function: ease-in;
-        }
-
-        .box5 {
-            background: azure;
-            transition-timing-function: ease-out;
-        }
-
-        .box6 {
-            background: cadetblue;
-            transition-timing-function: ease-in-out;
-        }
-
-        .box7 {
-            background: yellowgreen;
-            transition-timing-function: step-start;
-        }
-
-        .box8 {
-            background: lightskyblue;
-            transition-timing-function: step-end;
-        }
-
-        .box9 {
-            background: aquamarine;
-            transition-timing-function: steps(20, end);
-        }
-
-        .box10 {
-            background: darkgray;
-            transition-timing-function: cubic-bezier(.17, 1.65, 1, 1.9);
-        }
-
-        .out {
-            width: 100px;
-            height: 100px;
-            border:1px solid orange;
+        img{
+            width:400px;
+            height:225px;
+            transition: 1.3s all 0s ease;
         }
         .in{
-            width: 100px;
-            height: 100px;
-            background-color:palevioletred;
-            transition:3s all 0.5s ease;
+            width:400px;
+            height:225px;
+            background-color:black;
+            color:white;
+            position: absolute;
+            left:0;
+            top:0;
+            text-align:center;
+            line-height: 225px;
+            font-size:64px;
+            opacity:0;
+            transition: 1.3s all 0s ease;
+            cursor:pointer;
         }
         .out:hover .in{
-            width:1000px;
+            opacity:0.5;
+        }
+        .out:hover img{
+            transform:scale(1.9,1.9) rotate(30deg);
         }
     </style>
 </head>
 <body>
-<div class="box1">基础过渡</div>
-<hr>
 <div class="outer">
-    <div class="box box2">平滑</div>
-    <div class="box box3">匀速</div>
-    <div class="box box4">先慢后快</div>
-    <div class="box box5">先快后慢</div>
-    <div class="box box6">慢、快、慢</div>
-    <div class="box box7">直接到终点</div>
-    <div class="box box8">等待别人到终点</div>
-    <div class="box box9">分布过渡</div>
-    <div class="box box10">贝塞尔曲线</div>
+    <div class="inner">艾薇利特</div>
 </div>
 <hr>
 <div class="out">
-    <div class="in">1</div>
+    <img src="../images/picture.png" alt="violet">
+    <div class="in">艾薇利特</div>
 </div>
 </body>
 </html>
