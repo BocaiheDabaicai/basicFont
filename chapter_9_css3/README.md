@@ -488,3 +488,43 @@ transform:translateZ(100px) scaleZ(1.2) rotateY(40deg);    /*  */
 格式如下:
 
 `transition:持续时间 属性 延时 发生类型(ease)`
+
+---
+
+## 动画
+
+内容:使元素产生一系列动作
+
+使用方法:
+
+```css
+/* 定义关键帧 */
+/* 方式一 */
+@keyframes 动画名称{
+    from{}    /* 第一帧 */
+    to{}    /* 最后一帧 */
+}
+/* 方式二 */
+@keyframes 动画名称{
+    0%{}    /* 第一帧 */
+    100%{}    /* 最后一帧 */
+}
+```
+
+属性:
+
+1. `animation-name:给元素指定动画名称`
+
+2. `animation-duration:设置元素持续时间`
+
+3. `animation-delay:设置动画延迟`
+
+4. `animation-timing-function:ease linear ... cubic-bezie 设置动画运行方式`
+
+5. `animation-iteration-count:[number] infinite 设置动画播放次数`
+
+6. `animation-direction:normal reverse alternate(交替运行) alternate-reverse 设置动画的方向`
+
+7. `animation-fill-mode:forwards(停在最后) backwards 设置动画最后的效果`
+
+8. `animation-play-state:running(default) paused 动画的播放状态`

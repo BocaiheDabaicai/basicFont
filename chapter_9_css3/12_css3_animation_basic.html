@@ -14,6 +14,49 @@
             height:100px;
             background-image:radial-gradient(at 30px 30px,palevioletred,lightblue);
             border-radius:50%;
+            /* 应用动画到元素 */
+            animation-name:moveRight2;
+            /* 动画持续的时间 */
+            animation-duration:3s;
+            /* 动画延时时间 */
+            animation-delay:0.5s;
+
+            /* 设置动画运行方式 */
+            /*animation-timing-function:linear;*/
+            /* 设置动画播放次数 */
+            /*animation-iteration-count:infinite;*/
+            /* 设置动画的方向 */
+            /*animation-direction:alternate;*/
+            /* 设置动画最后的效果 */
+            animation-fill-mode:forwards;
+        }
+        .outer:hover .inner{
+            /* 动画的播放状态 */
+            animation-play-state:paused;
+
+        }
+        /* 定义一组关键帧(动画) 方式一 */
+        @keyframes moveRight{
+            /* 第一帧 */
+            from{
+
+            }
+            /* 最后一帧 */
+            to{
+                transform:translate(900px);
+            }
+        }
+        /* 定义一组关键帧(动画) 方式二 */
+        @keyframes moveRight2{
+            /* 第一帧 */
+            0%{
+
+            }
+            /* 最后一帧 */
+            100%{
+                transform:translate(900px) rotate(360deg);
+                border-radius:0;
+            }
         }
     </style>
 </head>
