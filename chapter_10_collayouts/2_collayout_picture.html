@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多列图片</title>
+    <style>
+        .outer {
+            /* 直接指定列数 */
+            column-count: 4;
+        }
+        .outer img{
+            width:100%;
+            /*float:left;*/
+            transition:0.3s ease;
+            border-radius: 50%;
+        }
+        img:hover{
+            box-shadow:0 0 20px 10px palevioletred;
+            transform:scale(1.05);
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <img src="pictures/信息.png" alt="信息">
+    <img src="pictures/厨房.png" alt="厨房">
+    <img src="pictures/天气.png" alt="天气">
+    <img src="pictures/导航.png" alt="导航">
+    <img src="pictures/庭院.png" alt="庭院">
+    <img src="pictures/日历.png" alt="日历">
+    <img src="pictures/智能.png" alt="智能">
+    <img src="pictures/楼房.png" alt="楼房">
+    <img src="pictures/电话.png" alt="电话">
+    <img src="pictures/能源污染.png" alt="能源污染">
+    <img src="pictures/闹钟.png" alt="闹钟">
+    <img src="pictures/音乐.png" alt="音乐">
+</div>
+</body>
+</html>

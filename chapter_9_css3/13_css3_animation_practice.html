@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画案例</title>
+    <style>
+        .box{
+            width:300px;
+            height:360px;
+            background-image:url("./13_keyframes.png");
+            margin:0 auto;
+            animation:absqqq 1.5s steps(8) infinite;
+        }
+        .box2{
+            width:160px;
+            height:295px;
+            background-image: url("./13_keyframes2.png");
+            margin:0 auto;
+            animation:qqwwee 1.3s steps(7) infinite;
+        }
+        @keyframes absqqq {
+            from{}
+            to{
+                background-position: -2676px 0;
+            }
+        }
+        @keyframes qqwwee{
+            from{}
+            to{
+                background-position: -1008px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--<div class="box"></div>-->
+<hr>
+<div class="box2"></div>
+</body>
+</html>

@@ -528,3 +528,17 @@ transform:translateZ(100px) scaleZ(1.2) rotateY(40deg);    /*  */
 7. `animation-fill-mode:forwards(停在最后) backwards 设置动画最后的效果`
 
 8. `animation-play-state:running(default) paused 动画的播放状态`
+
+复合使用:
+
+`animation: 名称 持续时间 [延迟时间] [变化类型] [播放次数] [执行形式] [停止位置]`
+
+> 过渡与动画的区别:
+> 
+> 1. 过渡需要触发机制
+> 
+> 2. 过渡不能调整关键帧的变化
+> 
+> 3. 过渡属于动画里交互性的类型之一
+
+---

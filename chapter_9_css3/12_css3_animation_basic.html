@@ -58,11 +58,66 @@
                 border-radius:0;
             }
         }
+
+        .complex{
+            width:100px;
+            height:100px;
+            background-color:darkgray;
+            animation:moveRight 3s 0.5s ease 2 alternate backwards;
+        }
+        .outer:hover .complex{
+            animation-play-state:paused;
+        }
+
+        .outer2 {
+            width: 1000px;
+            height: 200px;
+            border: 1px solid pink;
+        }
+        .box{
+            width:100px;
+            height:100px;
+        }
+        .box1{
+            background-color: #0086b3;
+            transition:3s ease;
+        }
+        .outer2:hover .box1{
+            transform:translate(900px);
+        }
+        .box2{
+            background-color: #63a35c;
+            animation:box2Animation 3s 1s ease 3 alternate;
+        }
+        @keyframes box2Animation{
+            0%{
+                border-radius:0;
+            }
+            50%{
+                border-radius:50%;
+                background-color: palevioletred;
+            }
+            100%{
+                border-radius:0;
+                background-color: #63a35c;
+                transform:translate(900px)
+            }
+        }
+
     </style>
 </head>
 <body>
 <div class="outer">
-    <div class="inner"></div>
+    <div class="inner">基本使用</div>
+</div>
+<hr>
+<div class="outer">
+    <div class="complex">复合使用</div>
+</div>
+<hr>
+<div class="outer2">
+    <div class="box box1">过渡</div>
+    <div class="box box2">动画</div>
 </div>
 </body>
 </html>
