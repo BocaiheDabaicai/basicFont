@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伸缩盒模型_主轴换行</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height:600px;
+            background-color: palevioletred;
+            margin:0 auto;
+            /* 开启了flex布局 */
+            /*display:inline-flex;*/
+            display: flex;
+            /* 调整主轴方向,水平从右到左 */
+            flex-direction:row;
+            /* 主轴换行方式 */
+            flex-wrap:wrap;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: lightskyblue;
+            border: 1px solid lightsteelblue;
+            box-sizing: border-box;
+            /*float:left;*/
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">1</div>
+    <div class="inner">2</div>
+    <div class="inner">3</div>
+    <div class="inner">4</div>
+    <div class="inner">5</div>
+    <div class="inner">6</div>
+    <div class="inner">7</div>
+    <div class="inner">8</div>
+    <div class="inner">9</div>
+    <div class="inner">10</div>
+    <div class="inner">11</div>
+</div>
+</body>
+</html>

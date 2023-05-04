@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伸缩盒模型</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height:600px;
+            background-color: palevioletred;
+            margin:0 auto;
+            /* 开启了flex布局 */
+            /*display:inline-flex;*/
+            display: flex;
+            /* 调整主轴方向,水平从右到左 */
+            flex-direction:row;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: lightskyblue;
+            border: 1px solid lightsteelblue;
+            box-sizing: border-box;
+            /*float:left;*/
+        }
+
+        .inner3 {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">1</div>
+    <div class="inner">2</div>
+    <div class="inner inner3">
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+    </div>
+</div>
+<!--<hr>-->
+<!--<div class="outer">-->
+<!--    <div class="inner">1</div>-->
+<!--    <div class="inner">2</div>-->
+<!--    <div class="inner inner3">-->
+<!--        <div>a</div>-->
+<!--        <div>b</div>-->
+<!--        <div>c</div>-->
+<!--    </div>-->
+<!--</div>-->
+</body>
+</html>
