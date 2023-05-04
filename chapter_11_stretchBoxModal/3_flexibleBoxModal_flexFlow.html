@@ -18,6 +18,8 @@
             flex-wrap:wrap;
             /* 复合写法，容易混淆 */
             /*flex-flow:row-reverse wrap;*/
+            /* 主轴的对齐方式 起始 结束 */
+            justify-content:flex-start;
         }
 
         .inner {
@@ -27,6 +29,28 @@
             border: 1px solid lightsteelblue;
             box-sizing: border-box;
             /*float:left;*/
+        }
+
+        .outer2 {
+            width: 1000px;
+            height:600px;
+            background-color: palevioletred;
+            margin:0 auto;
+            /* 开启了flex布局 */
+            /*display:inline-flex;*/
+            display: flex;
+            /* 调整主轴方向,水平从右到左 */
+            flex-direction:row;
+            /* 主轴换行方式 */
+            flex-wrap:wrap;
+            /* 复合写法，容易混淆 */
+            /*flex-flow:row-reverse wrap;*/
+            /* 主轴的对齐方式 项目分布在一列中，项目之间的距离是边缘与项目之间的两倍 */
+            /*justify-content:space-around;*/
+            /* 主轴的对齐方式 项目分布在一列中，项目之间的距离是相等的 */
+            /*justify-content:space-between;*/
+            /* 主轴的对齐方式 项目分布在一列中，项目之间的距离是相等的,边缘也是 */
+            justify-content:space-evenly;
         }
     </style>
 </head>
@@ -43,6 +67,12 @@
     <div class="inner">9</div>
     <div class="inner">10</div>
     <div class="inner">11</div>
+</div>
+<hr>
+<div class="outer2">
+    <div class="inner">1</div>
+    <div class="inner">2</div>
+    <div class="inner">3</div>
 </div>
 </body>
 </html>
