@@ -156,3 +156,15 @@ flex-shrink:1 2 3
 计算收缩大小:
     比例值1*300、比例值2*300、比例值3*300
 ```
+
+### flex复合属性
+
+内容:`复合属性 flex-grow flex-shrink flex-basis`
+
+- `flex:1 1 auto 简写为 flex: auto`
+
+- `flex:1 1 0 简写为 flex: 1`
+
+- `flex:0 0 auto 简写为 flex: none`
+
+- `flex:0 1 auto 简写为 flex: 0 auto`
