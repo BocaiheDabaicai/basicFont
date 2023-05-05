@@ -52,9 +52,64 @@
             /* 主轴的对齐方式 项目分布在一列中，项目之间的距离是相等的,边缘也是 */
             justify-content:space-evenly;
         }
+
+        .outer3 {
+            width: 1000px;
+            height:600px;
+            background-color: palevioletred;
+            margin:0 auto;
+            /* 开启了flex布局 */
+            /*display:inline-flex;*/
+            display: flex;
+            /* 调整主轴方向,水平从右到左 */
+            flex-direction:row;
+            /* 主轴换行方式 */
+            flex-wrap:wrap;
+            /* 主轴的对齐方式 项目分布在一列中，项目之间的距离是相等的,边缘也是 */
+            justify-content:flex-start;
+            /* 侧轴的对齐方式 */
+            align-items:flex-start;
+            /*align-items:flex-end;*/
+            /*align-items:center;*/
+            /*align-items:baseline;*/
+            /* 拉伸整个父容器，不能给高度，默认值 */
+            /*align-items:stretch;*/
+        }
+
+        .inner2{
+            height:300px;
+            /*font-size:40px;*/
+        }
+        .inner3{
+            height:100px;
+        }
+
+        .outer4{
+            width: 1000px;
+            height:900px;
+            background-color: palevioletred;
+            margin:0 auto;
+            /* 开启了flex布局 */
+            /*display:inline-flex;*/
+            display: flex;
+            /* 调整主轴方向,水平从右到左 */
+            flex-direction:row;
+            /* 主轴换行方式 */
+            flex-wrap:wrap;
+            /* 主轴的对齐方式 项目分布在一列中，项目之间的距离是相等的,边缘也是 */
+            justify-content:flex-start;
+            /* 侧轴的对齐方式(多行) */
+            /*align-content:flex-start;*/
+            /*align-content:flex-end;*/
+            /*align-content:center;*/
+            /*align-content:space-around;*/
+            /*align-content:space-between;*/
+            align-content:space-evenly;
+        }
     </style>
 </head>
 <body>
+<h2>主轴基础</h2>
 <div class="outer">
     <div class="inner">1</div>
     <div class="inner">2</div>
@@ -68,11 +123,35 @@
     <div class="inner">10</div>
     <div class="inner">11</div>
 </div>
+<h2>主轴对齐</h2>
 <hr>
 <div class="outer2">
     <div class="inner">1</div>
     <div class="inner">2</div>
     <div class="inner">3</div>
+</div>
+<h2>侧轴单行对齐</h2>
+<hr>
+<div class="outer3">
+    <div class="inner">1</div>
+    <div class="inner inner2">2</div>
+    <div class="inner inner3">3</div>
+</div>
+<h2>侧轴多行对齐</h2>
+<hr>
+<div class="outer4">
+    <div class="inner">1</div>
+    <div class="inner inner2">2</div>
+    <div class="inner inner3">3</div>
+    <div class="inner">4</div>
+    <div class="inner">5</div>
+    <div class="inner">6</div>
+    <div class="inner">7</div>
+    <div class="inner">8</div>
+    <div class="inner">9</div>
+    <div class="inner">10</div>
+    <div class="inner">11</div>
+    <div class="inner">12</div>
 </div>
 </body>
 </html>
