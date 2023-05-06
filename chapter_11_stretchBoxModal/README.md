@@ -168,3 +168,11 @@ flex-shrink:1 2 3
 - `flex:0 0 auto 简写为 flex: none`
 
 - `flex:0 1 auto 简写为 flex: 0 auto`
+
+### 项目排序与单独对齐
+
+属性名:
+
+1. 项目排序:`order:0`,数值越小,排序越靠前
+
+2. 单独对齐:`align-self:auto`,  调整单个元素的对齐方式

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>响应式布局</title>
+    <style>
+        h1{
+            width:600px;
+            height:400px;
+            background-image:linear-gradient(150deg,pink,palevioletred,purple);
+            margin:0 auto;
+            line-height:400px;
+            text-align:center;
+            color:white;
+            font-family:"有爱魔兽圆体 CN Medium", "sans-serif";
+            font-size:36px;
+            text-shadow:0 0 10px #dbec9e;
+        }
+        /* 处于打印状态时触发 */
+        @media print{
+            h1{
+                background:transparent;
+            }
+        }
+        @media screen{
+            h1{
+                /*font-family:"得意黑", "微软雅黑", "sans-serif";*/
+            }
+        }
+
+        *{
+            padding:0;
+            margin:0;
+        }
+        h2{
+            height:200px;
+            background-color:gray;
+            text-align:center;
+            line-height:200px;
+            font-size:48px;
+        }
+        /*@media (width<800px){*/
+        /*    h2{*/
+        /*        background-color:forestgreen;*/
+        /*    }*/
+        /*}*/
+        @media screen and (width>700px) and (width<800px){
+            h2{
+                background-color:forestgreen;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>呼呼呼！！！happy a day</h1>
+<br>
+<h2>咕噜咕噜</h2>
+</body>
+</html>
