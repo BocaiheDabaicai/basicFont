@@ -210,14 +210,15 @@
 
 ### <em>css三大特性</em>
 
-<blockquote>
+```context
 <p>1.层叠性,样式发生冲突(同样的名称,被设置不同的值),会根据一定的规则进行覆盖</p>
 <p>2.继承性,元素会自动拥有其父元素、其祖先元素上设置的某些样式,优先获得近处的样式</p>
 <p>3.优先性,优先级与权重</p>
-</blockquote>
+```
 
 ### 颜色
 
+```context
 <p>1.像素,精细表达网页内容的单位名称</p>  
 <p>2.表达方式</p>  
 <p>----(1)官方指定名称_mdn_named_color</p>    
@@ -225,20 +226,21 @@
 <p>----(3)hex与hexa,hex调整红绿蓝三种光色,#0bc3e6 每两位代表一种颜色(十六进制),末尾再添加两位代表透明度</p>    
 <p>----(4)<code>hsl(css3)</code>与<code>hsla(css3)</code>,hsl代表色相度,饱和度,亮度,hsl(x,y,z) 色相盘、百分比、百分比组成,<u style="color:red">很少使用</u></p>    
 <p>----(5)Ui设计师提供的设计稿</p>
+```
 
 ### 字体
 
-<blockquote>
+```context
 <p>1.字体大小,font-size,最小字体与默认字体由浏览器的设置决定</p>
 <p>2.字体族,font-family,书写正确的字体名称,可以用逗号隔开多个字体,结尾使用serif||sans-serif(衬线字体||非衬线字体),且不需要加引号</p>
 <p>3.字体风格,font-style,主要有normal(默认)、italic(斜体,判别字体斜体是否存在)、oblique(斜体,强制斜体)</p>
 <p>4.字体粗细,font-weight,主要有lighter、normal、bold、bolder(少见),可以用数字表示100-400(lighter)、500-600(normal)、700-1000(bold)</p>
 <p>5.复合写法,font,(粗细)、(斜体)、大小、字体族</p>
-</blockquote>
+```
 
 ### 文本
 
-<blockquote>
+```context
 <p>1.文本颜色,名称、rgb、hex:#xxxxxx、hsl</p>
 <p>2.文本间距,letter-spacing|word-spacing,单位px,负值缩小间距</p>
 <p>3.文本修饰,text-decoration,可选值 underline、overline、none、line-through,可选线 wavy dotted,且线颜色可以自定义</p>
@@ -256,6 +258,7 @@
 <p>10.文本垂直对齐 <u>(对于单行文字)</u> :顶部无需调整,居中设置height=line-height,底部设置居中设置<code>height=line-height*2-(font-size)-动态调整值</code> </p>
 <p>11.垂直属性 vertical-align,常用设定值 top middle baseline bottom,middle指的是与父元素上x字母(假设字母)的中心对齐</p>
 </blockquote>
+```
 
 ### css列表属性
 
@@ -316,6 +319,7 @@
 
 ### 显示模式总结
 
+```context
 <blockquote style="background:rgba(139,218,139,0.21)">
 <h3>块元素</h3>
 <p>1.主体结构标签:<html> <body></p>
@@ -334,6 +338,7 @@
 <h3>display属性</h3>
 <p>支持类型为 block inline-block inline none</p>
 </blockquote>
+```
 
 ### 盒子模型
 
