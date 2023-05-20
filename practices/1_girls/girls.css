@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    margin:0;
+}
+.container{
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 3px;
+    font-family: "有爱魔兽圆体 CN Medium",sans-serif;
+}
+.container div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.image{
+    transform: translateZ(-1px) scale(1.6);
+    background-size: cover;
+    height: 100vh;
+    z-index:-1;
+}
+.text{
+    height:50vh;
+    background-color: white;
+}
+.text h1{
+    color: black;
+}
+.heading{
+    z-index:-1;
+    transform: translateY(-30vh) translateZ(1px);
+    color:white;
+    font-size:30px;
+}
