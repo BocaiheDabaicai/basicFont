@@ -146,10 +146,8 @@ this.$router.go(-1)
 ### 22. 路由的 hash 模式和 history 模式的区别
 
 1. 在显示上，hash 路由会在 url 中添加 “#”，而 history 路由没有。
-   
 
 2. 底层的实现方式不同，hash 模式是通过 onhashChange 事件监听 location.hash 来实现的。而 history 模式是通过 pushState（或者 replaceState）和监听 popState 事件实现的。pushState 可以改变 url 地址实现跳转，而且页面不会刷新，它需要手动调用地址变化之后的处理函数，并在处理函数内部决定跳转逻辑。replaceState 可以读取浏览器的历史记录并修改。监听 popState 事件主要为了响应浏览器的前进和后退功能。
-   
 
 3. history 模式需要后端支持，比如：当用户输入 url 按回车，或者点击刷新浏览器时。因为在 history 模式下，前后端 url 必须保持一致，如果不一致的话则会返回 404 错误。
 
@@ -255,6 +253,8 @@ Vue.js的模板编译过程可以分为以下几个步骤：
 **使用 svg 图标：** 相对于用一张图片来表示图标，`svg` 拥有更好的图片质量，体积更小，并且不需要开启额外的 `http` 请求
 
 **压缩图片：** 可以使用 `image-webpack-loader`，在用户肉眼分辨不清的情况下一定程度上压缩图片
+
+
 
 
 
