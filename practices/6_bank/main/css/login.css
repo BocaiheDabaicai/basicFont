@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+.card{
+    /*margin: 0 auto;*/
+    width: 20em;
+    height: 24em;
+    /*background-color: #fff0f3;*/
+    text-align: center;
+    margin-top: 10em;
+    border-radius: 2em;
+    box-shadow: 1.2em 1.2em 100px 0 #777777;
+}
+h4{
+    padding: 3em 0 2em;
+    font-size: 28px;
+}
+span{
+    color: #777777;
+    display: inline-block;
+    width: 15em;
+}
+.icon{
+    background-color: #4dc3ff;
+    width: 0.5em;
+    height: 0.2em;
+    margin: 1em auto;
+    border-radius: 5px;
+}
+.stButton{
+    /*background-color: #4dc3ff;*/
+    display: inline-block;
+    width: 4em;
+    height: 2.5em;
+    line-height: 2.5em;
+    background-image: linear-gradient(to right bottom, #fd8b9f, #fbfd82, #b6d3d6);
+    border-radius: 2em;
+    cursor: pointer;
+}
+.skButton{
+    margin-top: 2em;
+    cursor: pointer;
+}

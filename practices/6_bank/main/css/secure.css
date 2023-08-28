@@ -1,0 +1,18 @@
+#mdown{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 9px 10px 22px 4px rgba(0,0,0,0.3);
+}
+
+#mdown_top{
+    padding: 25px;
+}
+
+#mdown_top img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
